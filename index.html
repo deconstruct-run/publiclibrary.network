@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>THE PUBLIC LIBRARY</title>
+<style>
+:root {
+  --bg:#111111;
+  --bg2:#191919;
+  --bg3:#222222;
+  --tx:#e8e6e1;
+  --tx2:#8a8a8a;
+  --bd:#2a2a2a;
+  --pink:#ff2d6f;
+  --blue:#00c2ff;
+  --yel:#f5d800;
+  --grn:#7fff3a;
+  --org:#ff6b1a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg);
+  color:var(--tx);
+  font-family:'SF Mono','Cascadia Code','JetBrains Mono','Fira Code','Consolas','Liberation Mono','Menlo','Monaco','Courier New',monospace;
+  font-size:15px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+.container{
+  max-width:700px;
+  width:100%;
+  text-align:center;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:600;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+.tagline{
+  font-size:12px;
+  letter-spacing:3px;
+  color:var(--tx2);
+  text-transform:uppercase;
+  margin-bottom:60px;
+}
+
+.divider{
+  width:60px;
+  height:1px;
+  background:var(--bd);
+  margin:0 auto 60px;
+}
+
+.section-label{
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--tx2);
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+
+.modules{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:60px;
+}
+
+.mod-card{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:20px 24px;
+  background:var(--bg2);
+  border:1px solid var(--bd);
+  border-radius:6px;
+  text-decoration:none;
+  color:var(--tx);
+  transition:all 0.15s ease;
+  text-align:left;
+}
+.mod-card:hover{
+  background:var(--bg3);
+  border-color:var(--tx2);
+  transform:translateY(-1px);
+}
+
+.mod-dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+.mod-info{
+  flex:1;
+}
+
+.mod-title{
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:4px;
+}
+
+.mod-desc{
+  font-size:12px;
+  color:var(--tx2);
+  line-height:1.4;
+}
+
+.mod-arrow{
+  font-size:14px;
+  color:var(--tx2);
+  flex-shrink:0;
+}
+
+.coming-soon{
+  opacity:0.4;
+  pointer-events:none;
+  cursor:default;
+}
+.coming-soon .mod-arrow{
+  display:none;
+}
+.coming-soon .mod-desc::after{
+  content:' — COMING SOON';
+  color:var(--tx2);
+  font-size:10px;
+  letter-spacing:1px;
+}
+
+.footer{
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--tx2);
+  text-transform:uppercase;
+  margin-top:auto;
+  padding-top:40px;
+}
+
+.colors{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  margin-top:16px;
+}
+.colors span{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+}
+
+@media(max-width:600px){
+  .logo{font-size:20px;letter-spacing:2px}
+  .tagline{font-size:10px;margin-bottom:40px}
+  .divider{margin-bottom:40px}
+  .mod-card{padding:16px}
+  .mod-title{font-size:13px}
+  .mod-desc{font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="logo">THE PUBLIC LIBRARY</div>
+<div class="tagline">KNOWLEDGE MODULES &amp; LEARNING SYSTEMS</div>
+<div class="divider"></div>
+
+<div class="section-label">AVAILABLE MODULES</div>
+
+<div class="modules">
+
+<a href="/mod_coglev01/" class="mod-card">
+  <span class="mod-dot" style="background:linear-gradient(135deg,var(--blue),var(--org))"></span>
+  <div class="mod-info">
+    <div class="mod-title">COGNITIVE LEVERAGE</div>
+    <div class="mod-desc">A recursive field manual for perception engineering, strategic influence &amp; accelerated self-programming. 5 modules, 212 sections.</div>
+  </div>
+  <span class="mod-arrow">→</span>
+</a>
+
+<div class="mod-card coming-soon">
+  <span class="mod-dot" style="background:var(--bd)"></span>
+  <div class="mod-info">
+    <div class="mod-title">MODULE 02</div>
+    <div class="mod-desc">Next synthesis in development</div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  publiclibrary.network
+  <div class="colors">
+    <span style="background:var(--blue)"></span>
+    <span style="background:var(--org)"></span>
+    <span style="background:var(--grn)"></span>
+    <span style="background:var(--yel)"></span>
+    <span style="background:var(--pink)"></span>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
