@@ -25,7 +25,20 @@
   --red2: #ff6b6b;
   --yel: #f5d800;
   --side-w: 280px;
+  --f-mono: 'IBM Plex Mono', monospace;
+  --f-ui: 'Poppins', sans-serif;
 }
+
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;border-bottom:1px solid var(--bd);background:var(--bg);flex-shrink:0;z-index:100;position:relative;}
+.topbar-logo{font-family:var(--f-mono);font-size:12px;font-weight:300;letter-spacing:2px;color:var(--tx2);text-decoration:none;display:flex;align-items:center;gap:10px;}
+.topbar-logo:hover{color:var(--tx)}
+.topbar-logo strong{font-weight:400}
+.topbar-dots{display:flex;gap:4px}
+.topbar-dots span{width:5px;height:5px;border-radius:50%}
+.topbar-nav{display:flex;gap:20px}
+.topbar-link{font-family:var(--f-mono);font-weight:400;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--tx3);text-decoration:none;transition:color 0.15s}
+.topbar-link:hover{color:var(--tx2)}
+.topbar-link.active{color:var(--tx)}
 
 * { margin:0; padding:0; box-sizing:border-box; }
 html,body { width:100%; height:100%; }
@@ -621,6 +634,21 @@ a:hover { color:var(--tx); }
 </style>
 </head>
 <body>
+
+<nav class="topbar">
+  <a href="/" class="topbar-logo">
+    <span class="topbar-dots">
+      <span style="background:var(--blue)"></span>
+      <span style="background:var(--yel)"></span>
+      <span style="background:var(--red)"></span>
+    </span>
+    the<strong>PUBLICLIBRARY</strong>
+  </a>
+  <div class="topbar-nav">
+    <a href="/" class="topbar-link">SYSTEM</a>
+    <a href="/modules/" class="topbar-link active">MODULES</a>
+  </div>
+</nav>
 
 <input type="radio" name="s" id="s00-0" class="sr" checked>
 <input type="radio" name="s" id="s00-1" class="sr">
