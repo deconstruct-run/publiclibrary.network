@@ -9,6 +9,9 @@
 <title>COGNITIVE LEVERAGE — A Recursive Field Manual</title>
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 :root {
   --bg: #111111;
   --bg2: #191919;
@@ -17,11 +20,11 @@
   --tx2: #8a8a8a;
   --tx3: #555;
   --bd: #2a2a2a;
-  --pink: #ff2d6f;
-  --blue: #00c2ff;
+  --blue: #2d7aff;
+  --blue2: #5a9aff;
+  --red: #ff3b3b;
+  --red2: #ff6b6b;
   --yel: #f5d800;
-  --grn: #7fff3a;
-  --org: #ff6b1a;
   --side-w: 280px;
 }
 
@@ -32,7 +35,7 @@ html { scroll-behavior:smooth; }
 body {
   background:var(--bg);
   color:var(--tx);
-  font-family:'SF Mono','Cascadia Code','JetBrains Mono','Fira Code','Consolas','Liberation Mono','Menlo','Monaco','Courier New',monospace;
+  font-family:'IBM Plex Mono','SF Mono','Cascadia Code','JetBrains Mono','Fira Code','Consolas',monospace;
   font-size:15px;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
@@ -62,10 +65,10 @@ body {
 }
 .hdr h1 {
   font-size:20px;
-  font-weight:600;
+  font-weight:500;
   letter-spacing:2px;
   text-transform:uppercase;
-  color:var(--tx);
+  color:#BDAE98;
 }
 .hdr p {
   font-size:11px;
@@ -156,11 +159,13 @@ body {
 }
 .sg h4 {
   font-size:10px;
+  font-weight:500;
   letter-spacing:1.5px;
   text-transform:uppercase;
   padding:10px 16px 8px;
   border-bottom:1px solid var(--bd);
   margin-bottom:4px;
+  color:#BDAE98;
 }
 .sl {
   display:block;
@@ -207,15 +212,16 @@ body {
   padding-bottom:12px;
   border-bottom:1px solid var(--bd);
 }
-.bc strong { color:var(--tx); font-weight:600; }
+.bc strong { color:#BDAE98; font-weight:500; }
 
 /* SECTION TITLE */
 .sv h2 {
   font-size:22px;
+  font-weight:500;
   letter-spacing:1.5px;
   text-transform:uppercase;
   margin-bottom:24px;
-  color:var(--tx);
+  color:#BDAE98;
   padding-bottom:16px;
   border-bottom:1px solid var(--bd);
 }
@@ -225,11 +231,12 @@ body {
 .sc p { margin-bottom:16px; }
 .sc h4 {
   font-size:14px;
+  font-weight:500;
   letter-spacing:1px;
   text-transform:uppercase;
   margin-top:28px;
   margin-bottom:12px;
-  color:var(--tx);
+  color:#BDAE98;
 }
 .sc h5 {
   font-size:13px;
@@ -1102,7 +1109,7 @@ a:hover { color:var(--tx); }
 #s00-12:checked~.app .mt[data-m="00"],
 #s00-13:checked~.app .mt[data-m="00"],
 #s00-14:checked~.app .mt[data-m="00"],
-#s00-15:checked~.app .mt[data-m="00"]{color:var(--tx);border-bottom-color:#00c2ff;background:var(--bg2)}
+#s00-15:checked~.app .mt[data-m="00"]{color:var(--tx);border-bottom-color:#2d7aff;background:var(--bg2)}
 
 #s01-0:checked~.app .mt[data-m="01"],
 #s01-1:checked~.app .mt[data-m="01"],
@@ -1134,7 +1141,7 @@ a:hover { color:var(--tx); }
 #s01-27:checked~.app .mt[data-m="01"],
 #s01-28:checked~.app .mt[data-m="01"],
 #s01-29:checked~.app .mt[data-m="01"],
-#s01-30:checked~.app .mt[data-m="01"]{color:var(--tx);border-bottom-color:#ff6b1a;background:var(--bg2)}
+#s01-30:checked~.app .mt[data-m="01"]{color:var(--tx);border-bottom-color:#f5d800;background:var(--bg2)}
 
 #s02-0:checked~.app .mt[data-m="02"],
 #s02-1:checked~.app .mt[data-m="02"],
@@ -1161,7 +1168,7 @@ a:hover { color:var(--tx); }
 #s02-22:checked~.app .mt[data-m="02"],
 #s02-23:checked~.app .mt[data-m="02"],
 #s02-24:checked~.app .mt[data-m="02"],
-#s02-25:checked~.app .mt[data-m="02"]{color:var(--tx);border-bottom-color:#7fff3a;background:var(--bg2)}
+#s02-25:checked~.app .mt[data-m="02"]{color:var(--tx);border-bottom-color:#ff3b3b;background:var(--bg2)}
 
 #s03-0:checked~.app .mt[data-m="03"],
 #s03-1:checked~.app .mt[data-m="03"],
@@ -1302,7 +1309,7 @@ a:hover { color:var(--tx); }
 #s04-34:checked~.app .mt[data-m="04"],
 #s04-35:checked~.app .mt[data-m="04"],
 #s04-36:checked~.app .mt[data-m="04"],
-#s04-37:checked~.app .mt[data-m="04"]{color:var(--tx);border-bottom-color:#ff2d6f;background:var(--bg2)}
+#s04-37:checked~.app .mt[data-m="04"]{color:var(--tx);border-bottom-color:#ff6b6b;background:var(--bg2)}
 
 #s00-0:checked~.app .bt[data-m="00"],
 #s00-1:checked~.app .bt[data-m="00"],
@@ -1319,7 +1326,7 @@ a:hover { color:var(--tx); }
 #s00-12:checked~.app .bt[data-m="00"],
 #s00-13:checked~.app .bt[data-m="00"],
 #s00-14:checked~.app .bt[data-m="00"],
-#s00-15:checked~.app .bt[data-m="00"]{color:var(--tx);border-top-color:#00c2ff}
+#s00-15:checked~.app .bt[data-m="00"]{color:var(--tx);border-top-color:#2d7aff}
 
 #s01-0:checked~.app .bt[data-m="01"],
 #s01-1:checked~.app .bt[data-m="01"],
@@ -1351,7 +1358,7 @@ a:hover { color:var(--tx); }
 #s01-27:checked~.app .bt[data-m="01"],
 #s01-28:checked~.app .bt[data-m="01"],
 #s01-29:checked~.app .bt[data-m="01"],
-#s01-30:checked~.app .bt[data-m="01"]{color:var(--tx);border-top-color:#ff6b1a}
+#s01-30:checked~.app .bt[data-m="01"]{color:var(--tx);border-top-color:#f5d800}
 
 #s02-0:checked~.app .bt[data-m="02"],
 #s02-1:checked~.app .bt[data-m="02"],
@@ -1378,7 +1385,7 @@ a:hover { color:var(--tx); }
 #s02-22:checked~.app .bt[data-m="02"],
 #s02-23:checked~.app .bt[data-m="02"],
 #s02-24:checked~.app .bt[data-m="02"],
-#s02-25:checked~.app .bt[data-m="02"]{color:var(--tx);border-top-color:#7fff3a}
+#s02-25:checked~.app .bt[data-m="02"]{color:var(--tx);border-top-color:#ff3b3b}
 
 #s03-0:checked~.app .bt[data-m="03"],
 #s03-1:checked~.app .bt[data-m="03"],
@@ -1519,80 +1526,80 @@ a:hover { color:var(--tx); }
 #s04-34:checked~.app .bt[data-m="04"],
 #s04-35:checked~.app .bt[data-m="04"],
 #s04-36:checked~.app .bt[data-m="04"],
-#s04-37:checked~.app .bt[data-m="04"]{color:var(--tx);border-top-color:#ff2d6f}
-#s00-0:checked~.app .sl[data-s="00-0"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-1:checked~.app .sl[data-s="00-1"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-2:checked~.app .sl[data-s="00-2"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-3:checked~.app .sl[data-s="00-3"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-4:checked~.app .sl[data-s="00-4"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-5:checked~.app .sl[data-s="00-5"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-6:checked~.app .sl[data-s="00-6"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-7:checked~.app .sl[data-s="00-7"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-8:checked~.app .sl[data-s="00-8"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-9:checked~.app .sl[data-s="00-9"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-10:checked~.app .sl[data-s="00-10"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-11:checked~.app .sl[data-s="00-11"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-12:checked~.app .sl[data-s="00-12"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-13:checked~.app .sl[data-s="00-13"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-14:checked~.app .sl[data-s="00-14"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s00-15:checked~.app .sl[data-s="00-15"]{color:var(--tx);border-left-color:#00c2ff;background:var(--bg3)}
-#s01-0:checked~.app .sl[data-s="01-0"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-1:checked~.app .sl[data-s="01-1"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-2:checked~.app .sl[data-s="01-2"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-3:checked~.app .sl[data-s="01-3"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-4:checked~.app .sl[data-s="01-4"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-5:checked~.app .sl[data-s="01-5"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-6:checked~.app .sl[data-s="01-6"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-7:checked~.app .sl[data-s="01-7"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-8:checked~.app .sl[data-s="01-8"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-9:checked~.app .sl[data-s="01-9"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-10:checked~.app .sl[data-s="01-10"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-11:checked~.app .sl[data-s="01-11"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-12:checked~.app .sl[data-s="01-12"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-13:checked~.app .sl[data-s="01-13"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-14:checked~.app .sl[data-s="01-14"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-15:checked~.app .sl[data-s="01-15"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-16:checked~.app .sl[data-s="01-16"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-17:checked~.app .sl[data-s="01-17"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-18:checked~.app .sl[data-s="01-18"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-19:checked~.app .sl[data-s="01-19"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-20:checked~.app .sl[data-s="01-20"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-21:checked~.app .sl[data-s="01-21"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-22:checked~.app .sl[data-s="01-22"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-23:checked~.app .sl[data-s="01-23"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-24:checked~.app .sl[data-s="01-24"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-25:checked~.app .sl[data-s="01-25"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-26:checked~.app .sl[data-s="01-26"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-27:checked~.app .sl[data-s="01-27"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-28:checked~.app .sl[data-s="01-28"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-29:checked~.app .sl[data-s="01-29"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s01-30:checked~.app .sl[data-s="01-30"]{color:var(--tx);border-left-color:#ff6b1a;background:var(--bg3)}
-#s02-0:checked~.app .sl[data-s="02-0"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-1:checked~.app .sl[data-s="02-1"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-2:checked~.app .sl[data-s="02-2"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-3:checked~.app .sl[data-s="02-3"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-4:checked~.app .sl[data-s="02-4"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-5:checked~.app .sl[data-s="02-5"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-6:checked~.app .sl[data-s="02-6"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-7:checked~.app .sl[data-s="02-7"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-8:checked~.app .sl[data-s="02-8"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-9:checked~.app .sl[data-s="02-9"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-10:checked~.app .sl[data-s="02-10"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-11:checked~.app .sl[data-s="02-11"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-12:checked~.app .sl[data-s="02-12"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-13:checked~.app .sl[data-s="02-13"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-14:checked~.app .sl[data-s="02-14"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-15:checked~.app .sl[data-s="02-15"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-16:checked~.app .sl[data-s="02-16"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-17:checked~.app .sl[data-s="02-17"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-18:checked~.app .sl[data-s="02-18"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-19:checked~.app .sl[data-s="02-19"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-20:checked~.app .sl[data-s="02-20"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-21:checked~.app .sl[data-s="02-21"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-22:checked~.app .sl[data-s="02-22"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-23:checked~.app .sl[data-s="02-23"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-24:checked~.app .sl[data-s="02-24"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
-#s02-25:checked~.app .sl[data-s="02-25"]{color:var(--tx);border-left-color:#7fff3a;background:var(--bg3)}
+#s04-37:checked~.app .bt[data-m="04"]{color:var(--tx);border-top-color:#ff6b6b}
+#s00-0:checked~.app .sl[data-s="00-0"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-1:checked~.app .sl[data-s="00-1"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-2:checked~.app .sl[data-s="00-2"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-3:checked~.app .sl[data-s="00-3"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-4:checked~.app .sl[data-s="00-4"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-5:checked~.app .sl[data-s="00-5"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-6:checked~.app .sl[data-s="00-6"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-7:checked~.app .sl[data-s="00-7"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-8:checked~.app .sl[data-s="00-8"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-9:checked~.app .sl[data-s="00-9"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-10:checked~.app .sl[data-s="00-10"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-11:checked~.app .sl[data-s="00-11"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-12:checked~.app .sl[data-s="00-12"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-13:checked~.app .sl[data-s="00-13"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-14:checked~.app .sl[data-s="00-14"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s00-15:checked~.app .sl[data-s="00-15"]{color:var(--tx);border-left-color:#2d7aff;background:var(--bg3)}
+#s01-0:checked~.app .sl[data-s="01-0"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-1:checked~.app .sl[data-s="01-1"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-2:checked~.app .sl[data-s="01-2"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-3:checked~.app .sl[data-s="01-3"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-4:checked~.app .sl[data-s="01-4"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-5:checked~.app .sl[data-s="01-5"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-6:checked~.app .sl[data-s="01-6"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-7:checked~.app .sl[data-s="01-7"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-8:checked~.app .sl[data-s="01-8"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-9:checked~.app .sl[data-s="01-9"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-10:checked~.app .sl[data-s="01-10"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-11:checked~.app .sl[data-s="01-11"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-12:checked~.app .sl[data-s="01-12"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-13:checked~.app .sl[data-s="01-13"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-14:checked~.app .sl[data-s="01-14"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-15:checked~.app .sl[data-s="01-15"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-16:checked~.app .sl[data-s="01-16"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-17:checked~.app .sl[data-s="01-17"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-18:checked~.app .sl[data-s="01-18"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-19:checked~.app .sl[data-s="01-19"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-20:checked~.app .sl[data-s="01-20"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-21:checked~.app .sl[data-s="01-21"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-22:checked~.app .sl[data-s="01-22"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-23:checked~.app .sl[data-s="01-23"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-24:checked~.app .sl[data-s="01-24"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-25:checked~.app .sl[data-s="01-25"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-26:checked~.app .sl[data-s="01-26"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-27:checked~.app .sl[data-s="01-27"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-28:checked~.app .sl[data-s="01-28"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-29:checked~.app .sl[data-s="01-29"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s01-30:checked~.app .sl[data-s="01-30"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
+#s02-0:checked~.app .sl[data-s="02-0"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-1:checked~.app .sl[data-s="02-1"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-2:checked~.app .sl[data-s="02-2"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-3:checked~.app .sl[data-s="02-3"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-4:checked~.app .sl[data-s="02-4"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-5:checked~.app .sl[data-s="02-5"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-6:checked~.app .sl[data-s="02-6"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-7:checked~.app .sl[data-s="02-7"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-8:checked~.app .sl[data-s="02-8"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-9:checked~.app .sl[data-s="02-9"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-10:checked~.app .sl[data-s="02-10"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-11:checked~.app .sl[data-s="02-11"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-12:checked~.app .sl[data-s="02-12"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-13:checked~.app .sl[data-s="02-13"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-14:checked~.app .sl[data-s="02-14"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-15:checked~.app .sl[data-s="02-15"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-16:checked~.app .sl[data-s="02-16"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-17:checked~.app .sl[data-s="02-17"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-18:checked~.app .sl[data-s="02-18"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-19:checked~.app .sl[data-s="02-19"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-20:checked~.app .sl[data-s="02-20"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-21:checked~.app .sl[data-s="02-21"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-22:checked~.app .sl[data-s="02-22"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-23:checked~.app .sl[data-s="02-23"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-24:checked~.app .sl[data-s="02-24"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
+#s02-25:checked~.app .sl[data-s="02-25"]{color:var(--tx);border-left-color:#ff3b3b;background:var(--bg3)}
 #s03-0:checked~.app .sl[data-s="03-0"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
 #s03-1:checked~.app .sl[data-s="03-1"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
 #s03-2:checked~.app .sl[data-s="03-2"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
@@ -1694,117 +1701,117 @@ a:hover { color:var(--tx); }
 #s03-98:checked~.app .sl[data-s="03-98"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
 #s03-99:checked~.app .sl[data-s="03-99"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
 #s03-100:checked~.app .sl[data-s="03-100"]{color:var(--tx);border-left-color:#f5d800;background:var(--bg3)}
-#s04-0:checked~.app .sl[data-s="04-0"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-1:checked~.app .sl[data-s="04-1"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-2:checked~.app .sl[data-s="04-2"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-3:checked~.app .sl[data-s="04-3"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-4:checked~.app .sl[data-s="04-4"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-5:checked~.app .sl[data-s="04-5"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-6:checked~.app .sl[data-s="04-6"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-7:checked~.app .sl[data-s="04-7"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-8:checked~.app .sl[data-s="04-8"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-9:checked~.app .sl[data-s="04-9"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-10:checked~.app .sl[data-s="04-10"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-11:checked~.app .sl[data-s="04-11"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-12:checked~.app .sl[data-s="04-12"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-13:checked~.app .sl[data-s="04-13"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-14:checked~.app .sl[data-s="04-14"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-15:checked~.app .sl[data-s="04-15"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-16:checked~.app .sl[data-s="04-16"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-17:checked~.app .sl[data-s="04-17"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-18:checked~.app .sl[data-s="04-18"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-19:checked~.app .sl[data-s="04-19"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-20:checked~.app .sl[data-s="04-20"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-21:checked~.app .sl[data-s="04-21"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-22:checked~.app .sl[data-s="04-22"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-23:checked~.app .sl[data-s="04-23"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-24:checked~.app .sl[data-s="04-24"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-25:checked~.app .sl[data-s="04-25"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-26:checked~.app .sl[data-s="04-26"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-27:checked~.app .sl[data-s="04-27"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-28:checked~.app .sl[data-s="04-28"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-29:checked~.app .sl[data-s="04-29"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-30:checked~.app .sl[data-s="04-30"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-31:checked~.app .sl[data-s="04-31"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-32:checked~.app .sl[data-s="04-32"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-33:checked~.app .sl[data-s="04-33"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-34:checked~.app .sl[data-s="04-34"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-35:checked~.app .sl[data-s="04-35"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-36:checked~.app .sl[data-s="04-36"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s04-37:checked~.app .sl[data-s="04-37"]{color:var(--tx);border-left-color:#ff2d6f;background:var(--bg3)}
-#s00-0:checked~.app .toc-sl[data-s="00-0"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-1:checked~.app .toc-sl[data-s="00-1"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-2:checked~.app .toc-sl[data-s="00-2"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-3:checked~.app .toc-sl[data-s="00-3"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-4:checked~.app .toc-sl[data-s="00-4"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-5:checked~.app .toc-sl[data-s="00-5"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-6:checked~.app .toc-sl[data-s="00-6"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-7:checked~.app .toc-sl[data-s="00-7"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-8:checked~.app .toc-sl[data-s="00-8"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-9:checked~.app .toc-sl[data-s="00-9"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-10:checked~.app .toc-sl[data-s="00-10"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-11:checked~.app .toc-sl[data-s="00-11"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-12:checked~.app .toc-sl[data-s="00-12"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-13:checked~.app .toc-sl[data-s="00-13"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-14:checked~.app .toc-sl[data-s="00-14"]{color:var(--tx);border-left-color:#00c2ff}
-#s00-15:checked~.app .toc-sl[data-s="00-15"]{color:var(--tx);border-left-color:#00c2ff}
-#s01-0:checked~.app .toc-sl[data-s="01-0"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-1:checked~.app .toc-sl[data-s="01-1"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-2:checked~.app .toc-sl[data-s="01-2"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-3:checked~.app .toc-sl[data-s="01-3"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-4:checked~.app .toc-sl[data-s="01-4"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-5:checked~.app .toc-sl[data-s="01-5"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-6:checked~.app .toc-sl[data-s="01-6"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-7:checked~.app .toc-sl[data-s="01-7"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-8:checked~.app .toc-sl[data-s="01-8"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-9:checked~.app .toc-sl[data-s="01-9"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-10:checked~.app .toc-sl[data-s="01-10"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-11:checked~.app .toc-sl[data-s="01-11"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-12:checked~.app .toc-sl[data-s="01-12"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-13:checked~.app .toc-sl[data-s="01-13"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-14:checked~.app .toc-sl[data-s="01-14"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-15:checked~.app .toc-sl[data-s="01-15"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-16:checked~.app .toc-sl[data-s="01-16"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-17:checked~.app .toc-sl[data-s="01-17"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-18:checked~.app .toc-sl[data-s="01-18"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-19:checked~.app .toc-sl[data-s="01-19"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-20:checked~.app .toc-sl[data-s="01-20"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-21:checked~.app .toc-sl[data-s="01-21"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-22:checked~.app .toc-sl[data-s="01-22"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-23:checked~.app .toc-sl[data-s="01-23"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-24:checked~.app .toc-sl[data-s="01-24"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-25:checked~.app .toc-sl[data-s="01-25"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-26:checked~.app .toc-sl[data-s="01-26"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-27:checked~.app .toc-sl[data-s="01-27"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-28:checked~.app .toc-sl[data-s="01-28"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-29:checked~.app .toc-sl[data-s="01-29"]{color:var(--tx);border-left-color:#ff6b1a}
-#s01-30:checked~.app .toc-sl[data-s="01-30"]{color:var(--tx);border-left-color:#ff6b1a}
-#s02-0:checked~.app .toc-sl[data-s="02-0"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-1:checked~.app .toc-sl[data-s="02-1"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-2:checked~.app .toc-sl[data-s="02-2"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-3:checked~.app .toc-sl[data-s="02-3"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-4:checked~.app .toc-sl[data-s="02-4"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-5:checked~.app .toc-sl[data-s="02-5"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-6:checked~.app .toc-sl[data-s="02-6"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-7:checked~.app .toc-sl[data-s="02-7"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-8:checked~.app .toc-sl[data-s="02-8"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-9:checked~.app .toc-sl[data-s="02-9"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-10:checked~.app .toc-sl[data-s="02-10"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-11:checked~.app .toc-sl[data-s="02-11"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-12:checked~.app .toc-sl[data-s="02-12"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-13:checked~.app .toc-sl[data-s="02-13"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-14:checked~.app .toc-sl[data-s="02-14"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-15:checked~.app .toc-sl[data-s="02-15"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-16:checked~.app .toc-sl[data-s="02-16"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-17:checked~.app .toc-sl[data-s="02-17"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-18:checked~.app .toc-sl[data-s="02-18"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-19:checked~.app .toc-sl[data-s="02-19"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-20:checked~.app .toc-sl[data-s="02-20"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-21:checked~.app .toc-sl[data-s="02-21"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-22:checked~.app .toc-sl[data-s="02-22"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-23:checked~.app .toc-sl[data-s="02-23"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-24:checked~.app .toc-sl[data-s="02-24"]{color:var(--tx);border-left-color:#7fff3a}
-#s02-25:checked~.app .toc-sl[data-s="02-25"]{color:var(--tx);border-left-color:#7fff3a}
+#s04-0:checked~.app .sl[data-s="04-0"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-1:checked~.app .sl[data-s="04-1"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-2:checked~.app .sl[data-s="04-2"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-3:checked~.app .sl[data-s="04-3"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-4:checked~.app .sl[data-s="04-4"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-5:checked~.app .sl[data-s="04-5"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-6:checked~.app .sl[data-s="04-6"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-7:checked~.app .sl[data-s="04-7"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-8:checked~.app .sl[data-s="04-8"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-9:checked~.app .sl[data-s="04-9"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-10:checked~.app .sl[data-s="04-10"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-11:checked~.app .sl[data-s="04-11"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-12:checked~.app .sl[data-s="04-12"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-13:checked~.app .sl[data-s="04-13"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-14:checked~.app .sl[data-s="04-14"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-15:checked~.app .sl[data-s="04-15"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-16:checked~.app .sl[data-s="04-16"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-17:checked~.app .sl[data-s="04-17"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-18:checked~.app .sl[data-s="04-18"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-19:checked~.app .sl[data-s="04-19"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-20:checked~.app .sl[data-s="04-20"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-21:checked~.app .sl[data-s="04-21"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-22:checked~.app .sl[data-s="04-22"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-23:checked~.app .sl[data-s="04-23"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-24:checked~.app .sl[data-s="04-24"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-25:checked~.app .sl[data-s="04-25"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-26:checked~.app .sl[data-s="04-26"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-27:checked~.app .sl[data-s="04-27"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-28:checked~.app .sl[data-s="04-28"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-29:checked~.app .sl[data-s="04-29"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-30:checked~.app .sl[data-s="04-30"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-31:checked~.app .sl[data-s="04-31"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-32:checked~.app .sl[data-s="04-32"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-33:checked~.app .sl[data-s="04-33"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-34:checked~.app .sl[data-s="04-34"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-35:checked~.app .sl[data-s="04-35"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-36:checked~.app .sl[data-s="04-36"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s04-37:checked~.app .sl[data-s="04-37"]{color:var(--tx);border-left-color:#ff6b6b;background:var(--bg3)}
+#s00-0:checked~.app .toc-sl[data-s="00-0"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-1:checked~.app .toc-sl[data-s="00-1"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-2:checked~.app .toc-sl[data-s="00-2"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-3:checked~.app .toc-sl[data-s="00-3"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-4:checked~.app .toc-sl[data-s="00-4"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-5:checked~.app .toc-sl[data-s="00-5"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-6:checked~.app .toc-sl[data-s="00-6"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-7:checked~.app .toc-sl[data-s="00-7"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-8:checked~.app .toc-sl[data-s="00-8"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-9:checked~.app .toc-sl[data-s="00-9"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-10:checked~.app .toc-sl[data-s="00-10"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-11:checked~.app .toc-sl[data-s="00-11"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-12:checked~.app .toc-sl[data-s="00-12"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-13:checked~.app .toc-sl[data-s="00-13"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-14:checked~.app .toc-sl[data-s="00-14"]{color:var(--tx);border-left-color:#2d7aff}
+#s00-15:checked~.app .toc-sl[data-s="00-15"]{color:var(--tx);border-left-color:#2d7aff}
+#s01-0:checked~.app .toc-sl[data-s="01-0"]{color:var(--tx);border-left-color:#f5d800}
+#s01-1:checked~.app .toc-sl[data-s="01-1"]{color:var(--tx);border-left-color:#f5d800}
+#s01-2:checked~.app .toc-sl[data-s="01-2"]{color:var(--tx);border-left-color:#f5d800}
+#s01-3:checked~.app .toc-sl[data-s="01-3"]{color:var(--tx);border-left-color:#f5d800}
+#s01-4:checked~.app .toc-sl[data-s="01-4"]{color:var(--tx);border-left-color:#f5d800}
+#s01-5:checked~.app .toc-sl[data-s="01-5"]{color:var(--tx);border-left-color:#f5d800}
+#s01-6:checked~.app .toc-sl[data-s="01-6"]{color:var(--tx);border-left-color:#f5d800}
+#s01-7:checked~.app .toc-sl[data-s="01-7"]{color:var(--tx);border-left-color:#f5d800}
+#s01-8:checked~.app .toc-sl[data-s="01-8"]{color:var(--tx);border-left-color:#f5d800}
+#s01-9:checked~.app .toc-sl[data-s="01-9"]{color:var(--tx);border-left-color:#f5d800}
+#s01-10:checked~.app .toc-sl[data-s="01-10"]{color:var(--tx);border-left-color:#f5d800}
+#s01-11:checked~.app .toc-sl[data-s="01-11"]{color:var(--tx);border-left-color:#f5d800}
+#s01-12:checked~.app .toc-sl[data-s="01-12"]{color:var(--tx);border-left-color:#f5d800}
+#s01-13:checked~.app .toc-sl[data-s="01-13"]{color:var(--tx);border-left-color:#f5d800}
+#s01-14:checked~.app .toc-sl[data-s="01-14"]{color:var(--tx);border-left-color:#f5d800}
+#s01-15:checked~.app .toc-sl[data-s="01-15"]{color:var(--tx);border-left-color:#f5d800}
+#s01-16:checked~.app .toc-sl[data-s="01-16"]{color:var(--tx);border-left-color:#f5d800}
+#s01-17:checked~.app .toc-sl[data-s="01-17"]{color:var(--tx);border-left-color:#f5d800}
+#s01-18:checked~.app .toc-sl[data-s="01-18"]{color:var(--tx);border-left-color:#f5d800}
+#s01-19:checked~.app .toc-sl[data-s="01-19"]{color:var(--tx);border-left-color:#f5d800}
+#s01-20:checked~.app .toc-sl[data-s="01-20"]{color:var(--tx);border-left-color:#f5d800}
+#s01-21:checked~.app .toc-sl[data-s="01-21"]{color:var(--tx);border-left-color:#f5d800}
+#s01-22:checked~.app .toc-sl[data-s="01-22"]{color:var(--tx);border-left-color:#f5d800}
+#s01-23:checked~.app .toc-sl[data-s="01-23"]{color:var(--tx);border-left-color:#f5d800}
+#s01-24:checked~.app .toc-sl[data-s="01-24"]{color:var(--tx);border-left-color:#f5d800}
+#s01-25:checked~.app .toc-sl[data-s="01-25"]{color:var(--tx);border-left-color:#f5d800}
+#s01-26:checked~.app .toc-sl[data-s="01-26"]{color:var(--tx);border-left-color:#f5d800}
+#s01-27:checked~.app .toc-sl[data-s="01-27"]{color:var(--tx);border-left-color:#f5d800}
+#s01-28:checked~.app .toc-sl[data-s="01-28"]{color:var(--tx);border-left-color:#f5d800}
+#s01-29:checked~.app .toc-sl[data-s="01-29"]{color:var(--tx);border-left-color:#f5d800}
+#s01-30:checked~.app .toc-sl[data-s="01-30"]{color:var(--tx);border-left-color:#f5d800}
+#s02-0:checked~.app .toc-sl[data-s="02-0"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-1:checked~.app .toc-sl[data-s="02-1"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-2:checked~.app .toc-sl[data-s="02-2"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-3:checked~.app .toc-sl[data-s="02-3"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-4:checked~.app .toc-sl[data-s="02-4"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-5:checked~.app .toc-sl[data-s="02-5"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-6:checked~.app .toc-sl[data-s="02-6"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-7:checked~.app .toc-sl[data-s="02-7"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-8:checked~.app .toc-sl[data-s="02-8"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-9:checked~.app .toc-sl[data-s="02-9"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-10:checked~.app .toc-sl[data-s="02-10"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-11:checked~.app .toc-sl[data-s="02-11"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-12:checked~.app .toc-sl[data-s="02-12"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-13:checked~.app .toc-sl[data-s="02-13"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-14:checked~.app .toc-sl[data-s="02-14"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-15:checked~.app .toc-sl[data-s="02-15"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-16:checked~.app .toc-sl[data-s="02-16"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-17:checked~.app .toc-sl[data-s="02-17"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-18:checked~.app .toc-sl[data-s="02-18"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-19:checked~.app .toc-sl[data-s="02-19"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-20:checked~.app .toc-sl[data-s="02-20"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-21:checked~.app .toc-sl[data-s="02-21"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-22:checked~.app .toc-sl[data-s="02-22"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-23:checked~.app .toc-sl[data-s="02-23"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-24:checked~.app .toc-sl[data-s="02-24"]{color:var(--tx);border-left-color:#ff3b3b}
+#s02-25:checked~.app .toc-sl[data-s="02-25"]{color:var(--tx);border-left-color:#ff3b3b}
 #s03-0:checked~.app .toc-sl[data-s="03-0"]{color:var(--tx);border-left-color:#f5d800}
 #s03-1:checked~.app .toc-sl[data-s="03-1"]{color:var(--tx);border-left-color:#f5d800}
 #s03-2:checked~.app .toc-sl[data-s="03-2"]{color:var(--tx);border-left-color:#f5d800}
@@ -1906,44 +1913,44 @@ a:hover { color:var(--tx); }
 #s03-98:checked~.app .toc-sl[data-s="03-98"]{color:var(--tx);border-left-color:#f5d800}
 #s03-99:checked~.app .toc-sl[data-s="03-99"]{color:var(--tx);border-left-color:#f5d800}
 #s03-100:checked~.app .toc-sl[data-s="03-100"]{color:var(--tx);border-left-color:#f5d800}
-#s04-0:checked~.app .toc-sl[data-s="04-0"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-1:checked~.app .toc-sl[data-s="04-1"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-2:checked~.app .toc-sl[data-s="04-2"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-3:checked~.app .toc-sl[data-s="04-3"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-4:checked~.app .toc-sl[data-s="04-4"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-5:checked~.app .toc-sl[data-s="04-5"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-6:checked~.app .toc-sl[data-s="04-6"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-7:checked~.app .toc-sl[data-s="04-7"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-8:checked~.app .toc-sl[data-s="04-8"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-9:checked~.app .toc-sl[data-s="04-9"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-10:checked~.app .toc-sl[data-s="04-10"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-11:checked~.app .toc-sl[data-s="04-11"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-12:checked~.app .toc-sl[data-s="04-12"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-13:checked~.app .toc-sl[data-s="04-13"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-14:checked~.app .toc-sl[data-s="04-14"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-15:checked~.app .toc-sl[data-s="04-15"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-16:checked~.app .toc-sl[data-s="04-16"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-17:checked~.app .toc-sl[data-s="04-17"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-18:checked~.app .toc-sl[data-s="04-18"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-19:checked~.app .toc-sl[data-s="04-19"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-20:checked~.app .toc-sl[data-s="04-20"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-21:checked~.app .toc-sl[data-s="04-21"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-22:checked~.app .toc-sl[data-s="04-22"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-23:checked~.app .toc-sl[data-s="04-23"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-24:checked~.app .toc-sl[data-s="04-24"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-25:checked~.app .toc-sl[data-s="04-25"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-26:checked~.app .toc-sl[data-s="04-26"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-27:checked~.app .toc-sl[data-s="04-27"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-28:checked~.app .toc-sl[data-s="04-28"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-29:checked~.app .toc-sl[data-s="04-29"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-30:checked~.app .toc-sl[data-s="04-30"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-31:checked~.app .toc-sl[data-s="04-31"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-32:checked~.app .toc-sl[data-s="04-32"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-33:checked~.app .toc-sl[data-s="04-33"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-34:checked~.app .toc-sl[data-s="04-34"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-35:checked~.app .toc-sl[data-s="04-35"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-36:checked~.app .toc-sl[data-s="04-36"]{color:var(--tx);border-left-color:#ff2d6f}
-#s04-37:checked~.app .toc-sl[data-s="04-37"]{color:var(--tx);border-left-color:#ff2d6f}
+#s04-0:checked~.app .toc-sl[data-s="04-0"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-1:checked~.app .toc-sl[data-s="04-1"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-2:checked~.app .toc-sl[data-s="04-2"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-3:checked~.app .toc-sl[data-s="04-3"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-4:checked~.app .toc-sl[data-s="04-4"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-5:checked~.app .toc-sl[data-s="04-5"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-6:checked~.app .toc-sl[data-s="04-6"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-7:checked~.app .toc-sl[data-s="04-7"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-8:checked~.app .toc-sl[data-s="04-8"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-9:checked~.app .toc-sl[data-s="04-9"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-10:checked~.app .toc-sl[data-s="04-10"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-11:checked~.app .toc-sl[data-s="04-11"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-12:checked~.app .toc-sl[data-s="04-12"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-13:checked~.app .toc-sl[data-s="04-13"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-14:checked~.app .toc-sl[data-s="04-14"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-15:checked~.app .toc-sl[data-s="04-15"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-16:checked~.app .toc-sl[data-s="04-16"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-17:checked~.app .toc-sl[data-s="04-17"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-18:checked~.app .toc-sl[data-s="04-18"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-19:checked~.app .toc-sl[data-s="04-19"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-20:checked~.app .toc-sl[data-s="04-20"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-21:checked~.app .toc-sl[data-s="04-21"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-22:checked~.app .toc-sl[data-s="04-22"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-23:checked~.app .toc-sl[data-s="04-23"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-24:checked~.app .toc-sl[data-s="04-24"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-25:checked~.app .toc-sl[data-s="04-25"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-26:checked~.app .toc-sl[data-s="04-26"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-27:checked~.app .toc-sl[data-s="04-27"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-28:checked~.app .toc-sl[data-s="04-28"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-29:checked~.app .toc-sl[data-s="04-29"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-30:checked~.app .toc-sl[data-s="04-30"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-31:checked~.app .toc-sl[data-s="04-31"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-32:checked~.app .toc-sl[data-s="04-32"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-33:checked~.app .toc-sl[data-s="04-33"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-34:checked~.app .toc-sl[data-s="04-34"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-35:checked~.app .toc-sl[data-s="04-35"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-36:checked~.app .toc-sl[data-s="04-36"]{color:var(--tx);border-left-color:#ff6b6b}
+#s04-37:checked~.app .toc-sl[data-s="04-37"]{color:var(--tx);border-left-color:#ff6b6b}
 
 </style>
 </head>
@@ -2169,17 +2176,17 @@ a:hover { color:var(--tx); }
 <label for="toc-chk" class="toc-btn">SECTIONS</label>
 </header>
 <nav class="mtabs">
-<label for="s00-0" class="mt" data-m="00"><span class="dot" style="background:#00c2ff"></span>00 INITIALIZATI</label>
-<label for="s01-0" class="mt" data-m="01"><span class="dot" style="background:#ff6b1a"></span>01 ENCODING</label>
-<label for="s02-0" class="mt" data-m="02"><span class="dot" style="background:#7fff3a"></span>02 PROCESSING</label>
+<label for="s00-0" class="mt" data-m="00"><span class="dot" style="background:#2d7aff"></span>00 INITIALIZATI</label>
+<label for="s01-0" class="mt" data-m="01"><span class="dot" style="background:#f5d800"></span>01 ENCODING</label>
+<label for="s02-0" class="mt" data-m="02"><span class="dot" style="background:#ff3b3b"></span>02 PROCESSING</label>
 <label for="s03-0" class="mt" data-m="03"><span class="dot" style="background:#f5d800"></span>03 OPTIMIZATION</label>
-<label for="s04-0" class="mt" data-m="04"><span class="dot" style="background:#ff2d6f"></span>04 INTEGRATION</label>
+<label for="s04-0" class="mt" data-m="04"><span class="dot" style="background:#ff6b6b"></span>04 INTEGRATION</label>
 </nav>
 <label for="toc-chk" class="toc-ov"></label>
 <div class="toc-pan">
 <label for="toc-chk" class="toc-cls">CLOSE ✕</label>
 <div class="toc-mg" data-m="00">
-<h4 style="color:#00c2ff">MODULE 00: INITIALIZATION</h4>
+<h4 style="color:#2d7aff">MODULE 00: INITIALIZATION</h4>
 <label for="s00-0" class="toc-sl" data-s="00-0">1. THE BOOT SEQUENCE: UPGRADING YOUR LEARNING MACHINERY</label>
 <label for="s00-1" class="toc-sl" data-s="00-1">2. PREAMBLE: THE OPERATING SYSTEM METAPHOR</label>
 <label for="s00-2" class="toc-sl" data-s="00-2">3. HOW YOUR BRAIN PROCESSES, STORES, AND RETRIEVES INFORMATION</label>
@@ -2198,7 +2205,7 @@ a:hover { color:var(--tx); }
 <label for="s00-15" class="toc-sl" data-s="00-15">16. CONCLUSION: THE UPGRADE IS YOURS TO IMPLEMENT</label>
 </div>
 <div class="toc-mg" data-m="01">
-<h4 style="color:#ff6b1a">MODULE 01: ENCODING</h4>
+<h4 style="color:#f5d800">MODULE 01: ENCODING</h4>
 <label for="s01-0" class="toc-sl" data-s="01-0">1. THE DEEP STRUCTURE OF HUMAN REALITY CONSTRUCTION</label>
 <label for="s01-1" class="toc-sl" data-s="01-1">2. PREAMBLE: THE OPERATIONAL FRAMEWORK</label>
 <label for="s01-2" class="toc-sl" data-s="01-2">3. 1.1.1 REPRESENTATIONAL SYSTEMS: HOW THE BRAIN CODES EXPER...</label>
@@ -2232,7 +2239,7 @@ a:hover { color:var(--tx); }
 <label for="s01-30" class="toc-sl" data-s="01-30">31. INTEGRATION VERIFICATION CHECKLIST</label>
 </div>
 <div class="toc-mg" data-m="02">
-<h4 style="color:#7fff3a">MODULE 02: PROCESSING</h4>
+<h4 style="color:#ff3b3b">MODULE 02: PROCESSING</h4>
 <label for="s02-0" class="toc-sl" data-s="02-0">1. UPGRADING THE INTERNAL OPERATING SYSTEM FOR STRATEGIC THO...</label>
 <label for="s02-1" class="toc-sl" data-s="02-1">2. EXECUTIVE INTEGRATION</label>
 <label for="s02-2" class="toc-sl" data-s="02-2">3. THE SEVEN STRATEGIC COMPETENCIES</label>
@@ -2365,7 +2372,7 @@ a:hover { color:var(--tx); }
 <label for="s03-100" class="toc-sl" data-s="03-100">101. CONCLUSION: MODULE 3 AS OPERATIONAL INTEGRATION</label>
 </div>
 <div class="toc-mg" data-m="04">
-<h4 style="color:#ff2d6f">MODULE 04: INTEGRATION</h4>
+<h4 style="color:#ff6b6b">MODULE 04: INTEGRATION</h4>
 <label for="s04-0" class="toc-sl" data-s="04-0">1. THE INTEGRATION LAYER THAT CREATES COMPOUNDING RETURNS TH...</label>
 <label for="s04-1" class="toc-sl" data-s="04-1">2. THE SPIRAL ARCHITECTURE</label>
 <label for="s04-2" class="toc-sl" data-s="04-2">3. THE CROSS-MODULE LEVERAGE NETWORK</label>
@@ -2409,7 +2416,7 @@ a:hover { color:var(--tx); }
 <div class="body-area">
 <aside class="side">
 <div class="sg" data-m="00">
-<h4 style="color:#00c2ff">MODULE 00: INITIALIZATION</h4>
+<h4 style="color:#2d7aff">MODULE 00: INITIALIZATION</h4>
 <label for="s00-0" class="sl" data-s="00-0">1. THE BOOT SEQUENCE: UPGRADING YOUR LEARNING...</label>
 <label for="s00-1" class="sl" data-s="00-1">2. PREAMBLE: THE OPERATING SYSTEM METAPHOR</label>
 <label for="s00-2" class="sl" data-s="00-2">3. HOW YOUR BRAIN PROCESSES, STORES, AND RETR...</label>
@@ -2428,7 +2435,7 @@ a:hover { color:var(--tx); }
 <label for="s00-15" class="sl" data-s="00-15">16. CONCLUSION: THE UPGRADE IS YOURS TO IMPLEMENT</label>
 </div>
 <div class="sg" data-m="01">
-<h4 style="color:#ff6b1a">MODULE 01: ENCODING</h4>
+<h4 style="color:#f5d800">MODULE 01: ENCODING</h4>
 <label for="s01-0" class="sl" data-s="01-0">1. THE DEEP STRUCTURE OF HUMAN REALITY CONSTR...</label>
 <label for="s01-1" class="sl" data-s="01-1">2. PREAMBLE: THE OPERATIONAL FRAMEWORK</label>
 <label for="s01-2" class="sl" data-s="01-2">3. 1.1.1 REPRESENTATIONAL SYSTEMS: HOW THE BR...</label>
@@ -2462,7 +2469,7 @@ a:hover { color:var(--tx); }
 <label for="s01-30" class="sl" data-s="01-30">31. INTEGRATION VERIFICATION CHECKLIST</label>
 </div>
 <div class="sg" data-m="02">
-<h4 style="color:#7fff3a">MODULE 02: PROCESSING</h4>
+<h4 style="color:#ff3b3b">MODULE 02: PROCESSING</h4>
 <label for="s02-0" class="sl" data-s="02-0">1. UPGRADING THE INTERNAL OPERATING SYSTEM FO...</label>
 <label for="s02-1" class="sl" data-s="02-1">2. EXECUTIVE INTEGRATION</label>
 <label for="s02-2" class="sl" data-s="02-2">3. THE SEVEN STRATEGIC COMPETENCIES</label>
@@ -2595,7 +2602,7 @@ a:hover { color:var(--tx); }
 <label for="s03-100" class="sl" data-s="03-100">101. CONCLUSION: MODULE 3 AS OPERATIONAL INTEGR...</label>
 </div>
 <div class="sg" data-m="04">
-<h4 style="color:#ff2d6f">MODULE 04: INTEGRATION</h4>
+<h4 style="color:#ff6b6b">MODULE 04: INTEGRATION</h4>
 <label for="s04-0" class="sl" data-s="04-0">1. THE INTEGRATION LAYER THAT CREATES COMPOUN...</label>
 <label for="s04-1" class="sl" data-s="04-1">2. THE SPIRAL ARCHITECTURE</label>
 <label for="s04-2" class="sl" data-s="04-2">3. THE CROSS-MODULE LEVERAGE NETWORK</label>
@@ -2638,8 +2645,8 @@ a:hover { color:var(--tx); }
 </aside>
 <main class="content">
 <div class="sv" data-s="00-0">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 1 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">THE BOOT SEQUENCE: UPGRADING YOUR LEARNING MACHINERY</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 1 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">THE BOOT SEQUENCE: UPGRADING YOUR LEARNING MACHINERY</h2>
 <div class="sc">
 <p><strong>Version:</strong> 1.0</p>
 <p><strong>Date:</strong> 2026-03-27</p>
@@ -2654,8 +2661,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-1">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 2 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">PREAMBLE: THE OPERATING SYSTEM METAPHOR</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 2 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">PREAMBLE: THE OPERATING SYSTEM METAPHOR</h2>
 <div class="sc">
 <p>You are not a storage device. You are not a hard drive waiting to be filled with data. You are a learning operating system—and like any operating system, it runs at peak efficiency only when you understand its architecture, constraints, and optimization possibilities.</p>
 <p>This module is your boot sequence. It teaches you how to operate the entire COGNITIVE LEVERAGE system by upgrading your learning machinery <em>first</em>. Everything that follows in subsequent modules builds on the foundational understanding you will establish here.</p>
@@ -2670,8 +2677,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-2">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 3 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW YOUR BRAIN PROCESSES, STORES, AND RETRIEVES INFORMATION</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 3 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW YOUR BRAIN PROCESSES, STORES, AND RETRIEVES INFORMATION</h2>
 <div class="sc">
 <h4>THE PALEOLITHIC SUBSTRATE: Why Your Brain Learns the Way It Does</h4>
 <p>Before we talk about speed reading, memory palaces, or spaced repetition, you must understand why your brain is shaped the way it is. And that story begins 100,000 years ago on the savannah.</p>
@@ -2729,8 +2736,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-3">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 4 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW TO INTAKE INFORMATION FASTER WITHOUT SACRIFICING COMPREHENSION</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 4 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW TO INTAKE INFORMATION FASTER WITHOUT SACRIFICING COMPREHENSION</h2>
 <div class="sc">
 <p>Speed is useless if comprehension collapses. Comprehension is useless if you forget the material in two weeks. The protocols in this section solve both problems simultaneously.</p>
 <h4>PROTOCOL 1: PRE-READING STRATEGY</h4>
@@ -2822,8 +2829,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-4">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 5 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW TO BUILD FORTRESS-GRADE MEMORY STRUCTURES</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 5 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW TO BUILD FORTRESS-GRADE MEMORY STRUCTURES</h2>
 <div class="sc">
 <p>Memory is not a monolith. It is a hierarchical architecture with distinct systems. To master memory, you must understand each system and the techniques that optimize it.</p>
 <h4>THE MEMORY SYSTEMS HIERARCHY</h4>
@@ -2948,8 +2955,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-5">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 6 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW TO BECOME A SELF-DIRECTED LEARNER</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 6 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW TO BECOME A SELF-DIRECTED LEARNER</h2>
 <div class="sc">
 <p>Metacognition is awareness of your own thinking. A metacognitively skilled learner knows what they understand and what they do not. They can diagnose gaps in their knowledge. They can adjust their learning strategy in real time. They know which techniques work for which types of material.</p>
 <p>The difference between an average learner and an exceptional learner is not intelligence. It is metacognitive skill.</p>
@@ -3055,8 +3062,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-6">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 7 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW TO OPERATE AT CAPACITY WITHOUT COGNITIVE COLLAPSE</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 7 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW TO OPERATE AT CAPACITY WITHOUT COGNITIVE COLLAPSE</h2>
 <div class="sc">
 <p>Your working memory is a computational bottleneck. It can hold approximately 4-7 unrelated items simultaneously. Beyond that threshold, learning breaks down. Errors increase. Decision quality collapses. Fatigue accelerates.</p>
 <p>Expert performers do not have larger working memory than novices. They manage it more efficiently. They offload complexity to external systems. They reduce unnecessary cognitive load. They protect their attention.</p>
@@ -3143,8 +3150,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-7">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 8 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW MODULE 0 FEEDS INTO EVERYTHING THAT FOLLOWS</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 8 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW MODULE 0 FEEDS INTO EVERYTHING THAT FOLLOWS</h2>
 <div class="sc">
 <p>This module establishes the operating system. All subsequent modules assume you understand and have implemented:</p>
 <ul>
@@ -3213,8 +3220,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-8">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 9 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW *THE ONLY SKILL THAT MATTERS* PROVIDES ARCHITECTURE</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 9 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW *THE ONLY SKILL THAT MATTERS* PROVIDES ARCHITECTURE</h2>
 <div class="sc">
 <p>Jonathan Levi's framework focuses on the mechanics of acquisition and retention. The Caveman Learning Principles establish why we learn the way we do. The emphasis on memory as foundational to learning (not rote memorization, but deep encoding of interconnected knowledge) runs counter to modern educational trends that treat memorization as obsolete.</p>
 <p>Levi's integrated protocols—pre-reading, active recall, spaced repetition, memory palaces—form the operational core of this module's acquisition protocols. His emphasis on adult learning theory (Knowles' principles) justifies why readiness and relevance matter fundamentally.</p>
@@ -3227,8 +3234,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-9">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 10 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW *THE SCIENCE OF SELF-LEARNING* PROVIDES CONTROL MECHANISMS</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 10 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW *THE SCIENCE OF SELF-LEARNING* PROVIDES CONTROL MECHANISMS</h2>
 <div class="sc">
 <p>Peter Hollins' framework focuses on metacognition and self-direction. The Feynman Technique is not just a study strategy; it is a mechanism for diagnosing exactly what you understand and what you do not. It is honest self-assessment built into the learning process itself.</p>
 <p>Hollins' emphasis on growth mindset (from Carol Dweck's research) directly addresses the psychological substrate: if you believe you cannot learn something, you will not invest the effort required. Conversely, if you understand that expertise is developed through deliberate practice, not innate talent, you will persist through the difficult periods.</p>
@@ -3241,8 +3248,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-10">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 11 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">HOW *THE ORGANIZED MIND* PROVIDES SYSTEM ARCHITECTURE</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 11 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">HOW *THE ORGANIZED MIND* PROVIDES SYSTEM ARCHITECTURE</h2>
 <div class="sc">
 <p>Daniel Levitin's framework focuses on managing cognitive load and decision quality. The emphasis on external memory systems is crucial: your brain should not be a storage device. It should be a reasoning device.</p>
 <p>Working memory limitations are not personality flaws or skill deficits; they are architectural facts. The practical implication: design your learning system and work environment to respect these limits.</p>
@@ -3256,8 +3263,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-11">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 12 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">THE INTEGRATED SYSTEM</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 12 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">THE INTEGRATED SYSTEM</h2>
 <div class="sc">
 <p>These three texts are not three separate domains; they are three dimensions of a unified system:</p>
 <ul>
@@ -3275,8 +3282,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-12">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 13 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">OVERCOMING COMMON IMPLEMENTATION OBSTACLES</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 13 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">OVERCOMING COMMON IMPLEMENTATION OBSTACLES</h2>
 <div class="sc">
 <p><strong>Obstacle 1: The Motivation-Effort Gap</strong></p>
 <p>Many learners understand these protocols intellectually but do not implement them. Reason: the effort investment feels high compared to passive reading.</p>
@@ -3302,8 +3309,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-13">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 14 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">BENCHMARKING YOUR PROGRESS</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 14 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">BENCHMARKING YOUR PROGRESS</h2>
 <div class="sc">
 <p>Use these benchmarks to assess whether you are implementing protocols correctly:</p>
 <p><strong>Benchmark 1: Retention After 30 Days</strong></p>
@@ -3333,8 +3340,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-14">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 15 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">THE LEARNING CYCLE: PUTTING IT ALL TOGETHER</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 15 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">THE LEARNING CYCLE: PUTTING IT ALL TOGETHER</h2>
 <div class="sc">
 <p>Here is a complete cycle for learning any complex material:</p>
 <p><strong>Day 1 (Pre-learning)</strong></p>
@@ -3378,8 +3385,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="00-15">
-<div class="bc"><span style="color:#00c2ff">MODULE 00</span> &mdash; <strong>SECTION 16 OF 16</strong> &mdash; INITIALIZATION</div>
-<h2 style="border-bottom-color:#00c2ff">CONCLUSION: THE UPGRADE IS YOURS TO IMPLEMENT</h2>
+<div class="bc"><span style="color:#2d7aff">MODULE 00</span> &mdash; <strong>SECTION 16 OF 16</strong> &mdash; INITIALIZATION</div>
+<h2 style="border-bottom-color:#2d7aff">CONCLUSION: THE UPGRADE IS YOURS TO IMPLEMENT</h2>
 <div class="sc">
 <p>You now possess the architecture of expert learning. You understand why your brain works the way it does. You know the protocols that work. You have the immediate action items.</p>
 <p>What separates expert learners from novices is not intelligence or talent. It is the systematic application of these protocols.</p>
@@ -3411,8 +3418,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-0">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 1 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">THE DEEP STRUCTURE OF HUMAN REALITY CONSTRUCTION</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 1 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">THE DEEP STRUCTURE OF HUMAN REALITY CONSTRUCTION</h2>
 <div class="sc">
 <p><strong>Classification:</strong> OPERATIONAL MANUAL</p>
 <p><strong>Version:</strong> 1.0</p>
@@ -3427,8 +3434,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-1">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 2 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">PREAMBLE: THE OPERATIONAL FRAMEWORK</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 2 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">PREAMBLE: THE OPERATIONAL FRAMEWORK</h2>
 <div class="sc">
 <p>Perception engineering is not a peripheral skill. It is the foundation of all cognitive leverage—the systematic understanding of how human beings construct their subjective reality and how that construction process can be influenced, manipulated, defended, and optimized.</p>
 <p>This module integrates five major source systems:</p>
@@ -3450,8 +3457,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-2">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 3 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.1.1 REPRESENTATIONAL SYSTEMS: HOW THE BRAIN CODES EXPERIENCE</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 3 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.1.1 REPRESENTATIONAL SYSTEMS: HOW THE BRAIN CODES EXPERIENCE</h2>
 <div class="sc">
 <p>Human perception is not direct. The brain does not perceive reality "as it is." Instead, it codes experience into representational systems—internal maps made of sensory components.</p>
 <p><strong>The Five Primary Systems:</strong></p>
@@ -3496,8 +3503,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-3">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 4 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.1.2 SUB-MODALITIES: THE CONTROL INTERFACE</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 4 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.1.2 SUB-MODALITIES: THE CONTROL INTERFACE</h2>
 <div class="sc">
 <p>Sub-modalities are the "resolution" at which each representational system operates. They are the precise attributes that define how a representation is coded.</p>
 <p><strong>This is critical:</strong> By changing sub-modalities, you change the meaning, emotional impact, and behavioral response to the representation.</p>
@@ -3565,8 +3572,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-4">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 5 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.1.3 NEUROLOGICAL CODING: HOW EXPERIENCE BECOMES MEMORY</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 5 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.1.3 NEUROLOGICAL CODING: HOW EXPERIENCE BECOMES MEMORY</h2>
 <div class="sc">
 <p>The brain does not record experience objectively. Instead:</p>
 <p>1. <strong>Attention filters:</strong> Only attended-to information is encoded</p>
@@ -3596,8 +3603,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-5">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 6 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.1.4 EYE ACCESSING CUES: READING THE NEUROLOGICAL HIGHWAY</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 6 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.1.4 EYE ACCESSING CUES: READING THE NEUROLOGICAL HIGHWAY</h2>
 <div class="sc">
 <p>Eyes move in predictable directions when accessing different representational systems. These eye accessing cues reveal which system someone is using and can guide them toward different systems.</p>
 <p><strong>Standard Eye Accessing Pattern (right-handed people; reverse for left-handed):</strong></p>
@@ -3631,8 +3638,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-6">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 7 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.1.5 META-PROGRAMS: THE FILTERS THAT FILTER</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 7 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.1.5 META-PROGRAMS: THE FILTERS THAT FILTER</h2>
 <div class="sc">
 <p>Meta-programs are deeper-level thinking patterns that determine how a person filters information and responds to the world. They operate "above" individual experiences.</p>
 <p><strong>The Seven Core Meta-Programs:</strong></p>
@@ -3775,8 +3782,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-7">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 8 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.1.6 SENSORY DOMINANCE AND PERCEPTUAL STRATEGY</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 8 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.1.6 SENSORY DOMINANCE AND PERCEPTUAL STRATEGY</h2>
 <div class="sc">
 <p>Most people have a <strong>primary representational system</strong> they default to. Understanding someone's primary system allows you to:</p>
 <ul>
@@ -3829,8 +3836,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-8">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 9 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.2.1 STATE DEFINITION AND ARCHITECTURE</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 9 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.2.1 STATE DEFINITION AND ARCHITECTURE</h2>
 <div class="sc">
 <p>A <strong>state</strong> is a complete neurolinguistic package:</p>
 <ul>
@@ -3855,8 +3862,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-9">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 10 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.2.2 ANCHORING: CREATING INSTANT STATE ACCESS</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 10 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.2.2 ANCHORING: CREATING INSTANT STATE ACCESS</h2>
 <div class="sc">
 <p>An anchor is a stimulus (usually a physical gesture, word, or touch) that reliably triggers an associated state.</p>
 <p><strong>How anchoring works:</strong></p>
@@ -3934,8 +3941,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-10">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 11 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.2.3 CIRCLE OF EXCELLENCE: THE SPATIAL ANCHOR</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 11 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.2.3 CIRCLE OF EXCELLENCE: THE SPATIAL ANCHOR</h2>
 <div class="sc">
 <p>The Circle of Excellence is a space-based anchor that turns any location into a trigger for optimal state.</p>
 <p><strong>Protocol:</strong></p>
@@ -3963,8 +3970,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-11">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 12 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.2.4 PATTERN INTERRUPT: BREAKING STUCK STATES</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 12 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.2.4 PATTERN INTERRUPT: BREAKING STUCK STATES</h2>
 <div class="sc">
 <p>A pattern interrupt is a sudden, unexpected stimulus that breaks a person's current state and makes them receptive to new suggestion.</p>
 <p><strong>Why it works:</strong></p>
@@ -4018,8 +4025,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-12">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 13 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.2.5 EMOTIONAL STATE MANAGEMENT AND PHYSIOLOGY</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 13 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.2.5 EMOTIONAL STATE MANAGEMENT AND PHYSIOLOGY</h2>
 <div class="sc">
 <p>Your physiology directly shapes your emotional state. This is not metaphorical—it is neurological. Changing physiology changes neurology changes emotion.</p>
 <p><strong>The Physiology-Emotion Loop:</strong></p>
@@ -4066,8 +4073,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-13">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 14 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.3.1 THE MILTON MODEL: HYPNOTIC LANGUAGE ARCHITECTURE</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 14 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.3.1 THE MILTON MODEL: HYPNOTIC LANGUAGE ARCHITECTURE</h2>
 <div class="sc">
 <p>The Milton Model, derived from Milton Erickson's legendary therapeutic work, is a systematic approach to vague, indirect language that bypasses conscious resistance while directing unconscious acceptance.</p>
 <p>The Milton Model is the <strong>inverse</strong> of the Meta-Model. While the Meta-Model demands specificity, the Milton Model uses strategic vagueness.</p>
@@ -4199,8 +4206,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-14">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 15 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.3.2 THE META-MODEL: PRECISION LANGUAGE AND RECOVERY</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 15 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.3.2 THE META-MODEL: PRECISION LANGUAGE AND RECOVERY</h2>
 <div class="sc">
 <p>The Meta-Model is the inverse of the Milton Model. While Milton Model is vague to bypass resistance, Meta-Model is precise to recover deleted information.</p>
 <p><strong>The Meta-Model is used for:</strong></p>
@@ -4290,8 +4297,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-15">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 16 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.3.3 EMBEDDED COMMANDS: HIDDEN DIRECT SUGGESTION</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 16 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.3.3 EMBEDDED COMMANDS: HIDDEN DIRECT SUGGESTION</h2>
 <div class="sc">
 <p>Embedded commands are direct suggestions hidden within larger sentences through tonality, emphasis, or pacing.</p>
 <p><strong>Structure:</strong></p>
@@ -4353,8 +4360,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-16">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 17 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.3.4 CONVERSATIONAL TRANCE PATTERNS</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 17 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.3.4 CONVERSATIONAL TRANCE PATTERNS</h2>
 <div class="sc">
 <p>The deepest language work happens through conversational trance—using language to induce light altered states in normal conversation, without formal hypnotic induction.</p>
 <p><strong>Conversational Trance Elements:</strong></p>
@@ -4391,8 +4398,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-17">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 18 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.4.1 THE 29 IRON LAWS OF SUGGESTION</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 18 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.4.1 THE 29 IRON LAWS OF SUGGESTION</h2>
 <div class="sc">
 <p>The force of suggestion operates according to neurological principles so consistent they can be treated as laws:</p>
 <p><strong>LAW 1: SUGGESTIBILITY IS UNIVERSAL</strong></p>
@@ -4557,8 +4564,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-18">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 19 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.4.2 THE 5-STAGE INFLUENCE MODEL</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 19 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.4.2 THE 5-STAGE INFLUENCE MODEL</h2>
 <div class="sc">
 <p>Influence follows a predictable 5-stage architecture:</p>
 <p><strong>STAGE 1: ATTENTION CAPTURE</strong></p>
@@ -4643,8 +4650,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-19">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 20 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.5.1 THE 6-STEP REFRAME</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 20 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.5.1 THE 6-STEP REFRAME</h2>
 <div class="sc">
 <p>The 6-Step Reframe is a systematic protocol for changing the meaning (frame) of an experience or belief.</p>
 <p><strong>Neurological Principle:</strong> The brain doesn't respond to events; it responds to the meaning you assign to events. Change the meaning, change the neurological response.</p>
@@ -4714,8 +4721,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-20">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 21 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.5.2 SUB-MODALITY BELIEF CHANGE</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 21 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.5.2 SUB-MODALITY BELIEF CHANGE</h2>
 <div class="sc">
 <p>Beliefs are encoded in specific sub-modalities. Change the sub-modalities, change the belief.</p>
 <p><strong>The Operating Principle:</strong></p>
@@ -4758,8 +4765,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-21">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 22 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.5.3 PERCEPTUAL POSITIONS: MULTI-PERSPECTIVE WISDOM</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 22 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.5.3 PERCEPTUAL POSITIONS: MULTI-PERSPECTIVE WISDOM</h2>
 <div class="sc">
 <p>Perceptual positions allow you to understand situations from multiple perspectives simultaneously, creating wisdom and flexibility.</p>
 <p><strong>Position 1 (First Position): In Self</strong></p>
@@ -4813,8 +4820,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-22">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 23 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.5.4 LOGICAL LEVELS: HIERARCHICAL CHANGE</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 23 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.5.4 LOGICAL LEVELS: HIERARCHICAL CHANGE</h2>
 <div class="sc">
 <p>Logical Levels (Dilts Model) shows that change at different levels has different depth and permanence.</p>
 <p><strong>The Six Levels (from behavioral to transcendent):</strong></p>
@@ -4898,8 +4905,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-23">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 24 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.6.1 PATTERN RECOGNITION: DETECTING MANIPULATION TECHNIQUES</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 24 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.6.1 PATTERN RECOGNITION: DETECTING MANIPULATION TECHNIQUES</h2>
 <div class="sc">
 <p>The primary defense is awareness. Awareness allows you to recognize patterns being deployed against you.</p>
 <p><strong>The Core Manipulation Toolkit (What to recognize):</strong></p>
@@ -4983,8 +4990,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-24">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 25 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.6.2 THE NINE CORE HUMAN NEEDS AS LEVERAGE POINTS</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 25 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.6.2 THE NINE CORE HUMAN NEEDS AS LEVERAGE POINTS</h2>
 <div class="sc">
 <p>These are your vulnerabilities. Attackers will target them. Defense means understanding where you're vulnerable and strengthening those areas.</p>
 <p><strong>The Nine Needs and Their Vulnerabilities:</strong></p>
@@ -5056,8 +5063,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-25">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 26 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.6.3 DEFENSE PROTOCOLS</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 26 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.6.3 DEFENSE PROTOCOLS</h2>
 <div class="sc">
 <p><strong>PRIMARY DEFENSE: AWARENESS</strong></p>
 <p>The simplest and most powerful defense is awareness.</p>
@@ -5112,8 +5119,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-26">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 27 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.7.1 HOW THE ELEMENTS CONNECT</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 27 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.7.1 HOW THE ELEMENTS CONNECT</h2>
 <div class="sc">
 <p><strong>PERCEPTION ← REPRESENTATION ← SUB-MODALITY ← BELIEF ← BEHAVIOR</strong></p>
 <p>Change sub-modalities → perception changes → belief changes → behavior changes</p>
@@ -5134,8 +5141,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-27">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 28 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.7.2 INTEGRATED INFLUENCE PROTOCOL</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 28 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.7.2 INTEGRATED INFLUENCE PROTOCOL</h2>
 <div class="sc">
 <p><strong>For maximum effect, integrate multiple elements:</strong></p>
 <p><strong>Step 1: Establish Prestige</strong></p>
@@ -5207,8 +5214,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-28">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 29 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">1.7.3 DEFENSE INTEGRATION</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 29 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">1.7.3 DEFENSE INTEGRATION</h2>
 <div class="sc">
 <p>Defense requires coordinated multi-level awareness:</p>
 <p><strong>Level 1: Technique Recognition</strong></p>
@@ -5249,8 +5256,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-29">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 30 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">CONCLUSION: THE ETHICS AND ECOLOGY OF PERCEPTION ENGINEERING</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 30 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">CONCLUSION: THE ETHICS AND ECOLOGY OF PERCEPTION ENGINEERING</h2>
 <div class="sc">
 <p>Perception engineering is not inherently good or bad. It is a technology.</p>
 <p><strong>Honest influence:</strong></p>
@@ -5297,8 +5304,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="01-30">
-<div class="bc"><span style="color:#ff6b1a">MODULE 01</span> &mdash; <strong>SECTION 31 OF 31</strong> &mdash; ENCODING</div>
-<h2 style="border-bottom-color:#ff6b1a">INTEGRATION VERIFICATION CHECKLIST</h2>
+<div class="bc"><span style="color:#f5d800">MODULE 01</span> &mdash; <strong>SECTION 31 OF 31</strong> &mdash; ENCODING</div>
+<h2 style="border-bottom-color:#f5d800">INTEGRATION VERIFICATION CHECKLIST</h2>
 <div class="sc">
 <p><strong>This module includes:</strong></p>
 <p>✓ 1.1 Architecture of Subjective Experience</p>
@@ -5373,8 +5380,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-0">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 1 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">UPGRADING THE INTERNAL OPERATING SYSTEM FOR STRATEGIC THOUGHT, EXPANDED PERCEPTION, AND COGNITIVE RESILIENCE</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 1 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">UPGRADING THE INTERNAL OPERATING SYSTEM FOR STRATEGIC THOUGHT, EXPANDED PERCEPTION, AND COGNITIVE RESILIENCE</h2>
 <div class="sc">
 <p><strong>Synthesis Date:</strong> 2026-03-27</p>
 <p><strong>Framework Integration:</strong> HBR Strategic Thinking + Limitless Mind + The Obstacle Is the Way + The Wealth Mindset</p>
@@ -5389,8 +5396,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-1">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 2 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">EXECUTIVE INTEGRATION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 2 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">EXECUTIVE INTEGRATION</h2>
 <div class="sc">
 <p>Strategic cognition is not one framework—it is a unified operating system that integrates:</p>
 <p>1. <strong>Mental Architecture</strong> — How to organize thought for pattern detection and systemic understanding</p>
@@ -5409,8 +5416,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-2">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 3 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE SEVEN STRATEGIC COMPETENCIES</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 3 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE SEVEN STRATEGIC COMPETENCIES</h2>
 <div class="sc">
 <p>Strategic thinking rests on seven core competencies that can be developed systematically:</p>
 <h4>Competency 1: Interpretation Skills</h4>
@@ -5669,8 +5676,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-3">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 4 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">BUILDING STRATEGIC NETWORKS</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 4 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">BUILDING STRATEGIC NETWORKS</h2>
 <div class="sc">
 <p>Strategy doesn't happen in isolation. It happens through networks of diverse perspectives. Three network types support strategic thinking:</p>
 <p><strong>Operational Networks:</strong> Your day-to-day working relationships. Essential for execution, but limited in perspective. These are people you work with to accomplish immediate goals.</p>
@@ -5693,8 +5700,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-4">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 5 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE QUANTUM HOLOGRAM MODEL: UNDERSTANDING NON-LOCAL PERCEPTION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 5 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE QUANTUM HOLOGRAM MODEL: UNDERSTANDING NON-LOCAL PERCEPTION</h2>
 <div class="sc">
 <p><strong>Foundation Principle:</strong></p>
 <p>All information and knowledge exists in a quantum hologram—an interconnected field of information accessible to consciousness under the right conditions. This field operates at a higher vibration than the electromagnetic spectrum that carries normal sensory information. Lower-vibration light (five senses) decodes higher-vibration information (the quantum hologram).</p>
@@ -5721,8 +5728,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-5">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 6 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE REMOTE VIEWING PROTOCOL: FIVE-STAGE PERCEPTION EXPANSION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 6 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE REMOTE VIEWING PROTOCOL: FIVE-STAGE PERCEPTION EXPANSION</h2>
 <div class="sc">
 <p>Remote viewing is the ability to perceive information about a target (person, place, object, event) at a distance without using normal sensory channels. It's a learnable skill that anyone can develop through systematic practice.</p>
 <h4>Stage 1: Preparation and Centering (5-10 minutes)</h4>
@@ -5851,8 +5858,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-6">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 7 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">CONSCIOUSNESS SHIFTS REQUIRED FOR REMOTE VIEWING SUCCESS</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 7 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">CONSCIOUSNESS SHIFTS REQUIRED FOR REMOTE VIEWING SUCCESS</h2>
 <div class="sc">
 <p>Remote viewing requires four fundamental consciousness shifts:</p>
 <h4>Shift 1: From Thinking to Feeling</h4>
@@ -5902,8 +5909,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-7">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 8 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">TRAINING EXTENDED PERCEPTION: BUILDING BANDWIDTH</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 8 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">TRAINING EXTENDED PERCEPTION: BUILDING BANDWIDTH</h2>
 <div class="sc">
 <p><strong>The Bandwidth of Consciousness:</strong></p>
 <p>You have three levels of information access:</p>
@@ -5957,8 +5964,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-8">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 9 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE THREE-PART STOIC OPERATING SYSTEM</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 9 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE THREE-PART STOIC OPERATING SYSTEM</h2>
 <div class="sc">
 <p>Ancient Stoics (Marcus Aurelius, Epictetus, Seneca) developed a complete system for maintaining clarity and effectiveness under pressure. This system has three interdependent parts:</p>
 <h4>Part 1: Perception - Seeing Clearly Without Emotional Distortion</h4>
@@ -6155,8 +6162,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-9">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 10 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">INTEGRATING PERCEPTION-ACTION-WILL: THE COMPLETE RESPONSE TO OBSTACLES</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 10 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">INTEGRATING PERCEPTION-ACTION-WILL: THE COMPLETE RESPONSE TO OBSTACLES</h2>
 <div class="sc">
 <p>Stoic cognitive resilience combines all three elements:</p>
 <p><strong>When Facing Obstacle:</strong></p>
@@ -6196,8 +6203,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-10">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 11 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE FEELING OF "I" AS THE FOUNDATION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 11 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE FEELING OF "I" AS THE FOUNDATION</h2>
 <div class="sc">
 <p><strong>Operational Principle:</strong></p>
 <p>Your internal feeling state determines your decisions, what opportunities you notice, how you present yourself, what you attract, and what you're capable of accomplishing.</p>
@@ -6218,8 +6225,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-11">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 12 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE MENTAL STATE OF WEALTH</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 12 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE MENTAL STATE OF WEALTH</h2>
 <div class="sc">
 <p><strong>Characteristics of Wealth Consciousness:</strong></p>
 <p><strong>1. Feeling of Plenty, Not Scarcity</strong></p>
@@ -6280,8 +6287,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-12">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 13 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">TRANSFORMING THE FEELING OF "I": COGNITIVE ARCHITECTURE SHIFT</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 13 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">TRANSFORMING THE FEELING OF "I": COGNITIVE ARCHITECTURE SHIFT</h2>
 <div class="sc">
 <p><strong>The Challenge:</strong></p>
 <p>You can't think yourself wealthy. You must feel yourself wealthy. Affirmations without feeling don't work. Your unconscious mind recognizes the disconnect and resists.</p>
@@ -6356,8 +6363,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-13">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 14 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE LAW OF RELAXATION: EFFORT AND STRUGGLE CONTRADICT WEALTH</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 14 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE LAW OF RELAXATION: EFFORT AND STRUGGLE CONTRADICT WEALTH</h2>
 <div class="sc">
 <p><strong>Core Principle:</strong></p>
 <p>Wealth and ease are aligned. Struggle and scarcity are aligned. If you're struggling and forcing, you're contradicting the feeling state you're trying to achieve.</p>
@@ -6402,8 +6409,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-14">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 15 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">SOUND INVESTMENTS: INTEGRATING MINDSET WITH PRACTICAL ACTION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 15 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">SOUND INVESTMENTS: INTEGRATING MINDSET WITH PRACTICAL ACTION</h2>
 <div class="sc">
 <p><strong>The Question:</strong> Doesn't mindset need practical action?</p>
 <p><strong>The Answer:</strong> Yes, but the right kind—aligned action, not desperate action.</p>
@@ -6451,8 +6458,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-15">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 16 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">WEALTH CONSCIOUSNESS EXERCISES</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 16 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">WEALTH CONSCIOUSNESS EXERCISES</h2>
 <div class="sc">
 <h4>Exercise 1: Feeling the Assumption (10 minutes daily)</h4>
 <p>Purpose: Train your nervous system to feel wealthy.</p>
@@ -6500,8 +6507,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-16">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 17 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE PRIORITY FRAMEWORK: CRITICAL, IMPORTANT, DESIRABLE</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 17 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE PRIORITY FRAMEWORK: CRITICAL, IMPORTANT, DESIRABLE</h2>
 <div class="sc">
 <p>Strategic decisions often involve trade-offs. You can't do everything. You must choose what matters most.</p>
 <p><strong>Three-Tier Priority System:</strong></p>
@@ -6547,8 +6554,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-17">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 18 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">TRADE-OFF MANAGEMENT</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 18 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">TRADE-OFF MANAGEMENT</h2>
 <div class="sc">
 <p>Not all trade-offs are obvious. The framework:</p>
 <p><strong>Step 1: Identify What You're Trading</strong></p>
@@ -6571,8 +6578,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-18">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 19 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE LETTING GO FRAMEWORK: ADDRESSING ZOMBIE PROJECTS</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 19 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE LETTING GO FRAMEWORK: ADDRESSING ZOMBIE PROJECTS</h2>
 <div class="sc">
 <p>Most organizations have "zombie projects"—technically alive but no longer serving objectives. These drain resources and create confusion.</p>
 <p><strong>Identification:</strong></p>
@@ -6614,8 +6621,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-19">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 20 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">IF-THEN PLANNING FOR EXECUTION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 20 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">IF-THEN PLANNING FOR EXECUTION</h2>
 <div class="sc">
 <p><strong>Principle:</strong></p>
 <p>Anticipate obstacles before they occur. Create if-then contingencies. When situations occur, responses are prepared.</p>
@@ -6657,8 +6664,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-20">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 21 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">HOW MENTAL ARCHITECTURE IMPROVES PERCEPTION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 21 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">HOW MENTAL ARCHITECTURE IMPROVES PERCEPTION</h2>
 <div class="sc">
 <p><strong>Clearer Mental Organization → Clearer Perception</strong></p>
 <p>When you've organized your thinking into patterns, systems, and strategic frameworks, your perception becomes more refined. You see patterns in your environment more readily because your mind is looking for them.</p>
@@ -6673,8 +6680,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-21">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 22 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">HOW COGNITIVE RESILIENCE STRENGTHENS DECISION-MAKING</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 22 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">HOW COGNITIVE RESILIENCE STRENGTHENS DECISION-MAKING</h2>
 <div class="sc">
 <p><strong>Emotional Discipline → Clearer Decisions</strong></p>
 <p>When you've trained your perception to see obstacles clearly (not emotionally), and your will to persist through difficulty, your decisions improve. You're not making decisions from fear or panic. You're making them from clarity.</p>
@@ -6689,8 +6696,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-22">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 23 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">HOW WEALTH CONSCIOUSNESS ATTRACTS OPPORTUNITIES</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 23 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">HOW WEALTH CONSCIOUSNESS ATTRACTS OPPORTUNITIES</h2>
 <div class="sc">
 <p><strong>Abundance Mindset → Expanded Opportunity Perception</strong></p>
 <p>When your baseline feeling state is abundance, you notice opportunities you were missing before.</p>
@@ -6705,8 +6712,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-23">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 24 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">THE FOUR-WAY AMPLIFICATION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 24 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">THE FOUR-WAY AMPLIFICATION</h2>
 <div class="sc">
 <p><strong>Mental Architecture</strong> (how you think)</p>
 <p>↓ ↑</p>
@@ -6729,8 +6736,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-24">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 25 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">2.7 IMPLEMENTATION PATHWAY: 90-DAY INTEGRATION</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 25 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">2.7 IMPLEMENTATION PATHWAY: 90-DAY INTEGRATION</h2>
 <div class="sc">
 <p>Strategic cognition development follows a progression:</p>
 <p><strong>Foundation (Weeks 1-2): Perception Discipline</strong></p>
@@ -6774,8 +6781,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="02-25">
-<div class="bc"><span style="color:#7fff3a">MODULE 02</span> &mdash; <strong>SECTION 26 OF 26</strong> &mdash; PROCESSING</div>
-<h2 style="border-bottom-color:#7fff3a">CONCLUSION: THE OPERATING SYSTEM FOR STRATEGIC ADVANTAGE</h2>
+<div class="bc"><span style="color:#ff3b3b">MODULE 02</span> &mdash; <strong>SECTION 26 OF 26</strong> &mdash; PROCESSING</div>
+<h2 style="border-bottom-color:#ff3b3b">CONCLUSION: THE OPERATING SYSTEM FOR STRATEGIC ADVANTAGE</h2>
 <div class="sc">
 <p>Strategic cognition is not a collection of separate skills. It's an integrated operating system that upgrades how you think, perceive, decide, and persist.</p>
 <p>This module provides:</p>
@@ -9713,8 +9720,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-0">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 1 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">THE INTEGRATION LAYER THAT CREATES COMPOUNDING RETURNS THROUGH THE COGNITIVE LEVERAGE SPIRAL</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 1 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">THE INTEGRATION LAYER THAT CREATES COMPOUNDING RETURNS THROUGH THE COGNITIVE LEVERAGE SPIRAL</h2>
 <div class="sc">
 <p><strong>Module Date:</strong> 2026-03-27</p>
 <p><strong>Status:</strong> Synthesis Document - Final Integration Module</p>
@@ -9728,8 +9735,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-1">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 2 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">THE SPIRAL ARCHITECTURE</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 2 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">THE SPIRAL ARCHITECTURE</h2>
 <div class="sc">
 <p><code>`</code></p>
 <p>↗ PRECISION RETURNS</p>
@@ -9769,8 +9776,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-2">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 3 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">THE CROSS-MODULE LEVERAGE NETWORK</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 3 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">THE CROSS-MODULE LEVERAGE NETWORK</h2>
 <div class="sc">
 <p>The power of COGNITIVE LEVERAGE emerges from specific leverage points where techniques from different modules combine to create emergent effects—effects that none of the modules could produce alone.</p>
 <h4>Module 0 → All Modules (Foundation Layer)</h4>
@@ -9847,8 +9854,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-3">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 4 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 1: NLP ANCHORING + STOIC EMOTIONAL DISCIPLINE = UNSHAKEABLE STATE CONTROL</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 4 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 1: NLP ANCHORING + STOIC EMOTIONAL DISCIPLINE = UNSHAKEABLE STATE CONTROL</h2>
 <div class="sc">
 <p><strong>Module 1 Component</strong>: NLP anchoring—the ability to link a physical gesture or trigger to an internal state (confidence, calm, focus)</p>
 <p><strong>Module 2 Component</strong>: Stoic emotional discipline—the framework that emotional responses are interpretations, not facts, and can be reframed through cognitive control</p>
@@ -9878,8 +9885,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-4">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 5 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 2: STRATEGIC SYSTEMS THINKING + INDIRECT SUGGESTION = UNDETECTABLE REFRAMING</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 5 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 2: STRATEGIC SYSTEMS THINKING + INDIRECT SUGGESTION = UNDETECTABLE REFRAMING</h2>
 <div class="sc">
 <p><strong>Module 2 Component</strong>: Systems thinking—understanding how organizations, hierarchies, and cultures function as integrated wholes</p>
 <p><strong>Module 3 Component</strong>: Indirect suggestion—the ability to suggest ideas without directly stating them, so the person feels they discovered the idea</p>
@@ -9907,8 +9914,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-5">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 6 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 3: CAVEMAN LEARNING (EXPERIENCE-BASED) + STRATEGIC FRAMEWORKS = EMBODIED STRATEGY</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 6 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 3: CAVEMAN LEARNING (EXPERIENCE-BASED) + STRATEGIC FRAMEWORKS = EMBODIED STRATEGY</h2>
 <div class="sc">
 <p><strong>Module 0 Component</strong>: Caveman learning—the principle that humans learn through direct sensory experience, not abstract information</p>
 <p><strong>Module 2 Component</strong>: Strategic thinking frameworks—cognitive models for analyzing systems, spotting patterns, making decisions</p>
@@ -9934,8 +9941,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-6">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 7 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 4: ATTENTION AND MEMORY ENGINEERING + INFLUENCE POSITIONING = INEVITABLE ACCEPTANCE</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 7 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 4: ATTENTION AND MEMORY ENGINEERING + INFLUENCE POSITIONING = INEVITABLE ACCEPTANCE</h2>
 <div class="sc">
 <p><strong>Module 1 Component</strong>: The memory principles from Module 0 (that memory is reconstructive, that attention shapes encoding, that emotional content is remembered more powerfully)</p>
 <p><strong>Module 3 Component</strong>: Influence techniques that position suggestions during high-attention, high-emotion moments</p>
@@ -9962,8 +9969,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-7">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 8 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 5: NLP SENSORY ACUITY + HIERARCHICAL POSITIONING = INVISIBLE AUTHORITY</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 8 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 5: NLP SENSORY ACUITY + HIERARCHICAL POSITIONING = INVISIBLE AUTHORITY</h2>
 <div class="sc">
 <p><strong>Module 1 Component</strong>: NLP sensory acuity—refined perception of micro-expressions, tone shifts, body language changes</p>
 <p><strong>Module 3 Component</strong>: Hierarchical positioning—the principle that language and non-verbal communication establish dominance hierarchies</p>
@@ -9990,8 +9997,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-8">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 9 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 6: PARETO 80/20 ANALYSIS + PRESUPPOSITIONAL SUGGESTION = MAXIMUM LEVERAGE INFLUENCE</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 9 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 6: PARETO 80/20 ANALYSIS + PRESUPPOSITIONAL SUGGESTION = MAXIMUM LEVERAGE INFLUENCE</h2>
 <div class="sc">
 <p><strong>Module 0 Component</strong>: Pareto principle—identifying which 20% of factors drive 80% of results</p>
 <p><strong>Module 3 Component</strong>: Presuppositional suggestion—embedding assumptions into statements so people accept them without noticing</p>
@@ -10018,8 +10025,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-9">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 10 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 7: OBSTACLE REFRAMING + REVERSE SUGGESTION = UNSTOPPABLE MOTIVATION</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 10 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 7: OBSTACLE REFRAMING + REVERSE SUGGESTION = UNSTOPPABLE MOTIVATION</h2>
 <div class="sc">
 <p><strong>Module 2 Component</strong>: Stoic philosophy and the Obstacle Is the Way framework—the principle that obstacles are precisely what you need for growth</p>
 <p><strong>Module 3 Component</strong>: Reverse suggestion—suggesting the opposite of what you want, so the other person's resistance becomes commitment to your goal</p>
@@ -10046,8 +10053,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-10">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 11 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 8: PATTERN DETECTION + AMBIGUOUS SYMBOLISM = REALITY FRAMING</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 11 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 8: PATTERN DETECTION + AMBIGUOUS SYMBOLISM = REALITY FRAMING</h2>
 <div class="sc">
 <p><strong>Module 2 Component</strong>: Pattern detection and trend spotting—the ability to see meaningful patterns in ambiguous data</p>
 <p><strong>Module 3 Component</strong>: Ambiguous symbolism—using symbols and language that people interpret through their own associations</p>
@@ -10075,8 +10082,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-11">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 12 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 9: MEMORY RECONSTRUCTION + EMOTIONAL ANCHORING = BELIEF INSTALLATION</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 12 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 9: MEMORY RECONSTRUCTION + EMOTIONAL ANCHORING = BELIEF INSTALLATION</h2>
 <div class="sc">
 <p><strong>Module 0 Component</strong>: Understanding that memory is reconstructive and that each recall reshapes memory</p>
 <p><strong>Module 1 Component</strong>: Emotional anchoring—the principle that emotions strongly encode memories</p>
@@ -10106,8 +10113,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-12">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 13 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">PATTERN 10: AUTHORITY ESTABLISHMENT + CONGRUENT DELIVERY + DIRECT SUGGESTION = IMMEDIATE BEHAVIORAL CHANGE</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 13 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">PATTERN 10: AUTHORITY ESTABLISHMENT + CONGRUENT DELIVERY + DIRECT SUGGESTION = IMMEDIATE BEHAVIORAL CHANGE</h2>
 <div class="sc">
 <p><strong>Module 1 Component</strong>: Congruence—all communication channels (words, tone, body, energy) perfectly aligned</p>
 <p><strong>Module 2 Component</strong>: Authority establishment—building genuine credibility and status</p>
@@ -10136,8 +10143,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-13">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 14 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">EXERCISE 1: THE THREE-MODULE NEGOTIATION PROTOCOL</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 14 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">EXERCISE 1: THE THREE-MODULE NEGOTIATION PROTOCOL</h2>
 <div class="sc">
 <p><strong>Modules Involved</strong>: 1 (Perception) + 2 (Strategy) + 3 (Influence)</p>
 <p><strong>Objective</strong>: Conduct a negotiation where you use perception to understand actual positions, strategic thinking to identify leverage, and influence to shape outcomes.</p>
@@ -10185,8 +10192,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-14">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 15 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">EXERCISE 2: THE CULTURAL REFRAMING CAMPAIGN</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 15 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">EXERCISE 2: THE CULTURAL REFRAMING CAMPAIGN</h2>
 <div class="sc">
 <p><strong>Modules Involved</strong>: 1 (Perception) + 2 (Strategy) + 3 (Influence)</p>
 <p><strong>Objective</strong>: Shift a group's interpretation of a core concept without direct argument or resistance.</p>
@@ -10237,8 +10244,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-15">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 16 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">EXERCISE 3: THE PERCEPTION-TO-INFLUENCE PIPELINE</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 16 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">EXERCISE 3: THE PERCEPTION-TO-INFLUENCE PIPELINE</h2>
 <div class="sc">
 <p><strong>Modules Involved</strong>: 1 (Perception) + 3 (Influence)</p>
 <p><strong>Objective</strong>: Use perception to read someone's actual state, then deploy precisely calibrated influence to shift that state.</p>
@@ -10293,8 +10300,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-16">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 17 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">EXERCISE 4: THE STRATEGIC LEVERAGE POINT EXPLOIT</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 17 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">EXERCISE 4: THE STRATEGIC LEVERAGE POINT EXPLOIT</h2>
 <div class="sc">
 <p><strong>Modules Involved</strong>: 2 (Strategy) + 3 (Influence)</p>
 <p><strong>Objective</strong>: Identify a system leverage point (where small change creates disproportionate impact), then use influence to shift thinking at that point.</p>
@@ -10339,8 +10346,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-17">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 18 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">EXERCISE 5: THE STOIC REFRAMING + NLP ANCHOR EMERGENCY PROTOCOL</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 18 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">EXERCISE 5: THE STOIC REFRAMING + NLP ANCHOR EMERGENCY PROTOCOL</h2>
 <div class="sc">
 <p><strong>Modules Involved</strong>: 2 (Stoic Discipline) + 1 (NLP Anchoring)</p>
 <p><strong>Objective</strong>: Build a psychological tool for maintaining optimal state in high-pressure situations.</p>
@@ -10396,8 +10403,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-18">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 19 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">EXERCISE 6: THE AUTHORITY + CONGRUENCE + SUGGESTION LEADERSHIP PROTOCOL</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 19 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">EXERCISE 6: THE AUTHORITY + CONGRUENCE + SUGGESTION LEADERSHIP PROTOCOL</h2>
 <div class="sc">
 <p><strong>Modules Involved</strong>: 1 (Congruence) + 2 (Authority) + 3 (Direct Suggestion)</p>
 <p><strong>Objective</strong>: Develop the ability to deliver direct suggestion in high-authority contexts where it naturally succeeds.</p>
@@ -10452,8 +10459,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-19">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 20 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">MODULE 0 DIAGNOSTIC: META-LEARNING CAPACITY</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 20 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">MODULE 0 DIAGNOSTIC: META-LEARNING CAPACITY</h2>
 <div class="sc">
 <p><strong>Question Set</strong>:</p>
 <p>1. When you learn a new skill, can you identify which 20% of practice yields 80% of results? Or do you spend equal time on all components?</p>
@@ -10474,8 +10481,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-20">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 21 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">MODULE 1 DIAGNOSTIC: PERCEPTION CALIBRATION</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 21 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">MODULE 1 DIAGNOSTIC: PERCEPTION CALIBRATION</h2>
 <div class="sc">
 <p><strong>Perception Exercise</strong>:</p>
 <p>1. Watch a video of someone (ideally someone you know slightly, not intimately)</p>
@@ -10508,8 +10515,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-21">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 22 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">MODULE 2 DIAGNOSTIC: STRATEGIC THINKING CAPACITY</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 22 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">MODULE 2 DIAGNOSTIC: STRATEGIC THINKING CAPACITY</h2>
 <div class="sc">
 <p><strong>Exercise 1: System Analysis</strong></p>
 <p>1. Identify a problem you're currently facing in work or relationships</p>
@@ -10551,8 +10558,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-22">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 23 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">MODULE 3 DIAGNOSTIC: INFLUENCE CAPACITY</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 23 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">MODULE 3 DIAGNOSTIC: INFLUENCE CAPACITY</h2>
 <div class="sc">
 <p><strong>Exercise 1: Direct Suggestion Delivery</strong></p>
 <p>1. Identify someone who disagrees with you on something low-stakes</p>
@@ -10597,8 +10604,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-23">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 24 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">DIAGNOSTIC SUMMARY AND PATH FORWARD</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 24 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">DIAGNOSTIC SUMMARY AND PATH FORWARD</h2>
 <div class="sc">
 <p>Use this calibration matrix:</p>
 <p>| Module | Strong | Developing | Needs Work |</p>
@@ -10622,8 +10629,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-24">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 25 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">HOW COMPOUNDING WORKS IN THIS SYSTEM</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 25 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">HOW COMPOUNDING WORKS IN THIS SYSTEM</h2>
 <div class="sc">
 <p><strong>Loop 1 (First Pass)</strong>:</p>
 <ul>
@@ -10668,8 +10675,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-25">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 26 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">THE MECHANISM OF COMPOUNDING: THREE SPECIFIC DYNAMICS</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 26 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">THE MECHANISM OF COMPOUNDING: THREE SPECIFIC DYNAMICS</h2>
 <div class="sc">
 <h4>1. Deepening Perception Enables Deeper Strategy Enables More Effective Influence</h4>
 <p><strong>Loop 1</strong>: You perceive surface behaviors; your strategy is tactical; your influence is hit-or-miss</p>
@@ -10716,8 +10723,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-26">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 27 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">MEASURING COMPOUNDING: CONCRETE METRICS</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 27 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">MEASURING COMPOUNDING: CONCRETE METRICS</h2>
 <div class="sc">
 <p><strong>Perception Speed</strong>:</p>
 <ul>
@@ -10759,8 +10766,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-27">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 28 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">THE EXPONENTIAL CURVE: WHY COMPOUNDING ACCELERATES</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 28 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">THE EXPONENTIAL CURVE: WHY COMPOUNDING ACCELERATES</h2>
 <div class="sc">
 <p>The curve isn't linear. It's exponential because:</p>
 <p>1. <strong>Early loops give knowledge; later loops give capability</strong></p>
@@ -10799,8 +10806,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-28">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 29 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">SCENARIO 1: ORGANIZATIONAL TRANSFORMATION UNDER RESISTANCE</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 29 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">SCENARIO 1: ORGANIZATIONAL TRANSFORMATION UNDER RESISTANCE</h2>
 <div class="sc">
 <p><strong>The Challenge</strong>:</p>
 <p>Your organization needs to shift from process-focused to innovation-focused. This requires changing how people interpret failure, how they allocate attention, what they value. Most of the organization is resisting because the old system worked (in the past) and the new system feels risky.</p>
@@ -10848,8 +10855,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-29">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 30 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">SCENARIO 2: HIGH-STAKES NEGOTIATION WITH ASYMMETRIC INFORMATION</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 30 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">SCENARIO 2: HIGH-STAKES NEGOTIATION WITH ASYMMETRIC INFORMATION</h2>
 <div class="sc">
 <p><strong>The Challenge</strong>:</p>
 <p>You're negotiating a major deal with someone who has better information than you, more power, and less incentive to deal with you. They're confident. You need to create a frame where they seriously consider your offer despite your apparent disadvantage.</p>
@@ -10895,8 +10902,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-30">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 31 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">SCENARIO 3: DEEP CHANGE WORK WITH SOMEONE STUCK IN LIMITING BELIEF</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 31 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">SCENARIO 3: DEEP CHANGE WORK WITH SOMEONE STUCK IN LIMITING BELIEF</h2>
 <div class="sc">
 <p><strong>The Challenge</strong>:</p>
 <p>Someone you work with (or live with) has a deep limiting belief that's holding them back: "I'm not creative" or "I can't learn languages" or "I'll never be good at public speaking." This belief drives all their behavior. You want to help them shift it without triggering defensiveness or seeming manipulative.</p>
@@ -10943,8 +10950,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-31">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 32 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">SCENARIO 4: RAPID INFLUENCE IN CRISIS WITH UNKNOWN AUDIENCES</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 32 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">SCENARIO 4: RAPID INFLUENCE IN CRISIS WITH UNKNOWN AUDIENCES</h2>
 <div class="sc">
 <p><strong>The Challenge</strong>:</p>
 <p>Unexpected crisis. You have minutes to establish authority, frame the situation, and get people to act. You have no prior relationship with some key decision-makers. You can't afford to be wrong about your reading of the situation.</p>
@@ -10991,8 +10998,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-32">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 33 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">SCENARIO 5: BUILDING DISTRIBUTED LEADERSHIP ACROSS DISAGREEMENT</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 33 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">SCENARIO 5: BUILDING DISTRIBUTED LEADERSHIP ACROSS DISAGREEMENT</h2>
 <div class="sc">
 <p><strong>The Challenge</strong>:</p>
 <p>You need to develop a distributed leadership structure where multiple people have authority in different domains, but they don't all agree on values, priorities, or approach. You need to build a system where they actually collaborate despite disagreement, rather than forming power-plays.</p>
@@ -11042,8 +11049,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-33">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 34 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">CONCLUSION: THE PERPETUAL SPIRAL</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 34 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">CONCLUSION: THE PERPETUAL SPIRAL</h2>
 <div class="sc">
 <p>The COGNITIVE LEVERAGE system is not a destination; it's a perpetual spiral of increasing capability. Each pass through the system makes you more perceptive, more strategic, more influential. Each success reveals new frontiers of complexity. Each failure reveals new dimensions of the system to understand.</p>
 <p>The compounding principle is relentless. After 5 complete spirals (2-3 years of active practice), you'll have developed perceptual accuracy and strategic intuition that seems almost superhuman to people in their first spiral. Your influence will feel effortless because it's integrated into how you think and move.</p>
@@ -11058,8 +11065,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-34">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 35 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">INTEGRATION LEVEL 1: CONSCIOUS APPLICATION (WEEKS 1-4)</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 35 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">INTEGRATION LEVEL 1: CONSCIOUS APPLICATION (WEEKS 1-4)</h2>
 <div class="sc">
 <ul>
 <li>You consciously remember modules while applying them</li>
@@ -11076,8 +11083,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-35">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 36 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">INTEGRATION LEVEL 2: SYSTEMATIC APPLICATION (WEEKS 5-12)</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 36 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">INTEGRATION LEVEL 2: SYSTEMATIC APPLICATION (WEEKS 5-12)</h2>
 <div class="sc">
 <ul>
 <li>Modules are connected; you consciously move between them</li>
@@ -11094,8 +11101,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-36">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 37 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">INTEGRATION LEVEL 3: INTEGRATED APPLICATION (MONTHS 3-6)</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 37 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">INTEGRATION LEVEL 3: INTEGRATED APPLICATION (MONTHS 3-6)</h2>
 <div class="sc">
 <ul>
 <li>Modules are unified; you don't think about them separately</li>
@@ -11112,8 +11119,8 @@ a:hover { color:var(--tx); }
 </div>
 
 <div class="sv" data-s="04-37">
-<div class="bc"><span style="color:#ff2d6f">MODULE 04</span> &mdash; <strong>SECTION 38 OF 38</strong> &mdash; INTEGRATION</div>
-<h2 style="border-bottom-color:#ff2d6f">INTEGRATION LEVEL 4: MASTERY (6+ MONTHS)</h2>
+<div class="bc"><span style="color:#ff6b6b">MODULE 04</span> &mdash; <strong>SECTION 38 OF 38</strong> &mdash; INTEGRATION</div>
+<h2 style="border-bottom-color:#ff6b6b">INTEGRATION LEVEL 4: MASTERY (6+ MONTHS)</h2>
 <div class="sc">
 <ul>
 <li>The system is invisible; you are the system</li>
@@ -11136,11 +11143,11 @@ a:hover { color:var(--tx); }
 </main>
 </div>
 <nav class="bnav">
-<label for="s00-0" class="bt" data-m="00"><span class="dot" style="background:#00c2ff"></span>00</label>
-<label for="s01-0" class="bt" data-m="01"><span class="dot" style="background:#ff6b1a"></span>01</label>
-<label for="s02-0" class="bt" data-m="02"><span class="dot" style="background:#7fff3a"></span>02</label>
+<label for="s00-0" class="bt" data-m="00"><span class="dot" style="background:#2d7aff"></span>00</label>
+<label for="s01-0" class="bt" data-m="01"><span class="dot" style="background:#f5d800"></span>01</label>
+<label for="s02-0" class="bt" data-m="02"><span class="dot" style="background:#ff3b3b"></span>02</label>
 <label for="s03-0" class="bt" data-m="03"><span class="dot" style="background:#f5d800"></span>03</label>
-<label for="s04-0" class="bt" data-m="04"><span class="dot" style="background:#ff2d6f"></span>04</label>
+<label for="s04-0" class="bt" data-m="04"><span class="dot" style="background:#ff6b6b"></span>04</label>
 </nav>
 </div>
 </body>
