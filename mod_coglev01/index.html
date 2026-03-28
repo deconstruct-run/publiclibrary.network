@@ -53,6 +53,56 @@ body {
   overflow:hidden;
 }
 
+/* TOPBAR NAV */
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 24px;
+  border-bottom:1px solid var(--bd);
+  background:var(--bg);
+  flex-shrink:0;
+  z-index:100;
+}
+.topbar-logo{
+  font-family:var(--f-mono);
+  font-size:12px;
+  font-weight:300;
+  letter-spacing:2px;
+  color:var(--tx2);
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.topbar-logo:hover{color:var(--tx)}
+.topbar-logo strong{font-weight:400}
+.topbar-dots{
+  display:flex;
+  gap:4px;
+}
+.topbar-dots span{
+  width:5px;
+  height:5px;
+  border-radius:50%;
+}
+.topbar-nav{
+  display:flex;
+  gap:20px;
+}
+.topbar-link{
+  font-family:var(--f-mono);
+  font-weight:400;
+  font-size:9px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--tx3);
+  text-decoration:none;
+  transition:color 0.15s;
+}
+.topbar-link:hover{color:var(--tx2)}
+.topbar-link.active{color:var(--tx)}
+
 /* HEADER */
 .hdr {
   background:linear-gradient(135deg,#0d0d0d,#191919);
@@ -2170,6 +2220,20 @@ a:hover { color:var(--tx); }
 <input type="checkbox" id="toc-chk" class="tc">
 
 <div class="app">
+<nav class="topbar">
+  <a href="/" class="topbar-logo">
+    <span class="topbar-dots">
+      <span style="background:var(--blue)"></span>
+      <span style="background:var(--yel)"></span>
+      <span style="background:var(--red)"></span>
+    </span>
+    the<strong>PUBLICLIBRARY</strong>
+  </a>
+  <div class="topbar-nav">
+    <a href="/" class="topbar-link">SYSTEM</a>
+    <a href="/modules/" class="topbar-link active">MODULES</a>
+  </div>
+</nav>
 <header class="hdr">
 <h1>COGNITIVE LEVERAGE</h1>
 <p>A RECURSIVE FIELD MANUAL</p>
